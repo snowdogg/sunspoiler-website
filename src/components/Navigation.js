@@ -47,9 +47,9 @@ const Navigation = () => {
   return (
     <Header>
     <GlobalStyles/>
-      <Title>Home</Title>
+      {/* <Title>Home</Title> */}
       <Title>Sun Spoiler</Title>
-      <Title>Contact</Title>
+      {/* <Title>Contact</Title> */}
     </Header>
   
   );

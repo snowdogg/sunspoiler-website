@@ -9,6 +9,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+
     - name: Checkout
       uses: actions/checkout@v2
 
@@ -26,5 +31,8 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         script: |
           rm -rf /var/www/html/*
-          cp -r build/* /var/www/html/
- 
+          cp -r public/* /var/www/html/
+    - name: Print working directory and list files
+      run: |
+        pwd
+        ls -l

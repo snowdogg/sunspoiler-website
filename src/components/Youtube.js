@@ -22,8 +22,8 @@ const MyComponent = ({videoId}) => {
   }, []);
 
   const opts = {
-    width: windowWidth >= 500 ? '90%' : '100%',
-    height: '450',
+    width: windowWidth >= 1280 ? '925' : (windowWidth >= 500  ? '90%' : '100%'),
+    height: '450'
   };
   return (
     <Container>

@@ -31,8 +31,8 @@ const CTA = styled.h1`
   font-weight: 400;
   text-align: center;
   font-size: 42px;
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   letter-spacing: 4px;
   background: rgb(22, 22, 22);
   display: flex;

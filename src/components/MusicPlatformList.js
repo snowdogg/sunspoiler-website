@@ -10,10 +10,11 @@ const Container = styled.div`
 
 const ButtonContainer = styled.div`
     padding: 8px;
-    width: 60%;
+    width: 40%;
     text-align: center;
     align-items: center;
     margin: 0 auto;
+    max-width: 500px;
     
 `
 

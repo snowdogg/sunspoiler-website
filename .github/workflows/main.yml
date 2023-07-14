@@ -31,7 +31,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         script: |
           rm -rf /var/www/html/*
-          cp -r public/* /var/www/html/
+          cp -r build/* /var/www/html/
     - name: Print working directory and list files
       run: |
         pwd

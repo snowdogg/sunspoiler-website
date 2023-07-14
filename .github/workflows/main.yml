@@ -21,7 +21,6 @@ jobs:
       run: |
         npm install
         CI='' npm run build
-        
 
     - name: Clear html folder on remote
       uses: appleboy/ssh-action@master
@@ -38,9 +37,9 @@ jobs:
         host: ${{ secrets.EC2_HOST }}
         username: ec2-user
         key: ${{ secrets.SSH_KEY }}
-        source: "build/*"
+        source: "build"
         target: "/var/www/html"
-
+        strip_components: 1
 
     - name: Print working directory and list files
       run: |

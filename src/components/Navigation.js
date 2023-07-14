@@ -1,6 +1,6 @@
 //create a simple react component that renders a navigation bar
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styled from "styled-components";
 import GlobalStyles from '../styles/GlobalStyles';
 

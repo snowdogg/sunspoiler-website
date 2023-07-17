@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const Container = styled.div`
     text-align: center;
-    width: 100vw;
+    
+    margin: 0 auto;
 `
 const MyComponent = ({videoId}) => {
 

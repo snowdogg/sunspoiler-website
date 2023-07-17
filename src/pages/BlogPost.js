@@ -2,22 +2,21 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import Container from '../components/Container';
 import { styled } from 'styled-components';
-import TrainingImages0 from '../images/TrainingImages0.png';
-import TrainingImages1 from '../images/TrainingImages1.png';
-import TrainingImages2 from '../images/TrainingImages2.png';
-import TrainingImages3 from '../images/TrainingImages3.png';
-import TrainingImages4 from '../images/TrainingImages4.png';
-import Img2Img0 from '../images/Img2Img0.png';
-import Img2Img1 from '../images/Img2Img1.png';
-import Img2Img2 from '../images/Img2Img2.png';
-import Deforum_Video from "../images/deforum_video.mp4";
+
 import YouTube from "../components/Youtube";
 
 const Header = styled.h1`
     color: white;
 `;
 
-const Video = styled.video``
+const Video = styled.video`
+    overflow-x: hidden;
+    width: 100%;
+    ${'' /* @media (max-width: 1280px) {
+        margin: 0 10% 0 10%;
+    } */}
+`
+
 const PageContainer = styled.div`
     margin-top: 20%;
     margin: 0 auto;
@@ -62,6 +61,14 @@ const BlogPost = () => {
             {/* <h2>Blog Post {id}</h2> */}
             {id === "ai-music-video" ?   <><Header>How I Used AI To Make An Animated Music Video For Under $500
             </Header> 
+            <Image style={{float: "left",marginRight: "10px", width:"100px", borderRadius: "100px"}}src="/images/profilepic.jpg" />
+            
+            <h3 style={{marginTop:"40px"}}>Andreas Cary<br />
+            <span style={{fontSize: "13px", fontStyle:"italic"}}>July 17, 2023</span>
+            <br />
+          <a style={{fontSize: "13px",  fontStyle:"italic"}}href="https://www.linkedin.com/in/andreas-cary-02b074120/" target="_blank">LinkedIn</a></h3>
+
+           
             <p>
             I recently released a music video for my song “Moment of Zen” that was animated using artificial intelligence. The goal of this article is to showcase a workflow that uses AI video to create a piece of finished art, not just a party trick or a cool effect. 
             </p>
@@ -96,7 +103,7 @@ For the footage of myself, I rented a green screen studio and paid a videographe
 {'}'}
 </CodeBlock>
 <p>Here's an example of the deforum video I created for the outro of the video:</p>
-<Video controls src={Deforum_Video}></Video>
+<Video controls src={"/images/deforum_video.mp4"}></Video>
 <p>
 
 Then in the positive prompts applied to all keyframes I’d put something like “blue light, anime, synthwave, cyberpunk” or whatever I deemed appropriate for that shot. The most consistent negative prompt I used was “text” so there wouldn’t be garbled words in my videos.
@@ -122,10 +129,10 @@ wearing a choker, cyberpunk, digital art, {'[[anime]]'}, comic, guitar, painting
 <p>
 {'<hypernet:Andreas Emmanuel:1>'} represents a hypernetwork I programmed on photos of my face. I admittedly might not have done the best job creating a hypernetwork, and a Lora could’ve been a better choice. Due to my time constraints, I began to understand that optimizing this model was going to limit the amount of time I had for the other processes to complete this video. For what it’s worth, these are the images I used to train the hypernetwork:
 </p>
-<Image src={TrainingImages0} alt="small images of the author's face" />
-<Image src={TrainingImages1} alt="small images of the author's face" />
-<Image src={TrainingImages2} alt="small images of the author's face" />
-<Image src={TrainingImages3} alt="small images of the author's face" />
+<Image src={"/images/TrainingImages0.png"} alt="small images of the author's face" />
+<Image src={"/images/TrainingImages1.png"} alt="small images of the author's face" />
+<Image src={"/images/TrainingImages3.png"} alt="small images of the author's face" />
+<Image src={"/images/TrainingImages4.png"} alt="small images of the author's face" />
 
  <p>Back to the img2img workflow. Next, I used a negative prompt of: 
 </p>
@@ -138,9 +145,9 @@ fingers and digits, cracked face, wrinkles on forehead, distorted face, text, wa
 Of course you would adopt these parameters to whatever suited your project, but this is what worked for my purposes. For some of the images where my mouth was moving I used controlent to try to match the facial movements. This proved very challenging but I was able to approximate enough for the clips I needed to make it work. Once I found an img2img setting that worked for one frame I would upload all the exported frames that ffmpeg created into a folder on the cloud server, set that folder as the Input Directory in the Batch tab of img2img, and run the batch job. It’s also important to make sure that transparent background are filled in with a green color in the settings tab of Automatic1111. This resulted in a folder full of transformed images.
 
 </p>
-<Image src={Img2Img0} alt={"an image of my automatic 11 11 workflow as described in the article"}></Image>
-<Image src={Img2Img1} alt={"an image of my automatic 11 11 workflow as described in the article"}></Image>
-<Image src={Img2Img2} alt={"an image of my automatic 11 11 workflow as described in the article"}></Image>
+<Image src={"/images/Img2Img0.png"} alt={"an image of my automatic 11 11 workflow as described in the article"}></Image>
+<Image src={"/images/Img2Img1.png"} alt={"an image of my automatic 11 11 workflow as described in the article"}></Image>
+<Image src={"/images/Img2Img2.png"} alt={"an image of my automatic 11 11 workflow as described in the article"}></Image>
 <p>After exporting the images, you can use ffmpeg either on the server or on your local computer after downloading the transformed frames. It's important to remember that we have only extracted half of the frames, so in order to put the footage back together and have it be the same length we need to put the video back together using each frame twice, thus achieving the 12 fps animation effect. That’s exactly what this ffmpeg command does: </p>
 <CodeBlock>
 ffmpeg -pattern_type glob -i '*.png' -vf "setpts=2.0*PTS" -r 24 -c:v libx264 output.mov

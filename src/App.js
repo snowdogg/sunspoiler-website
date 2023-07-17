@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import ReactGA from 'react-ga4';
-
+import { Helmet } from 'react-helmet';
 import Routes from './Routes';
 
 
@@ -14,11 +14,16 @@ function App() {
   
   }, []);
   return (
+    <>
+    <Helmet>
+    <base href="/" />
+  </Helmet>
     <Router>
   
       <Routes />
     
     </Router>
+    </>
   );
 }
 

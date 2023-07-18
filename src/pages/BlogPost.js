@@ -157,7 +157,7 @@ wearing a choker, cyberpunk, digital art, {'[[anime]]'}, comic, guitar, painting
 <CodeBlock>
 woman, female, goatee, beard, mustache, text, disfigured face, disfigured limbs, disfigured fingers, too many limbs, too many fingers, old,
 wrinkled, wrinkled forehead, blurry, distorted, hair texture, extra fingers, random
-fingers and digits, cracked face, wrinkles on forehead, distorted face, text, watermark, (deformed hands], extra hands, hand in torso
+fingers and digits, cracked face, wrinkles on forehead, distorted face, text, watermark, [deformed hands], extra hands, hand in torso
 </CodeBlock>
 <p>
 Of course you would adopt these parameters to whatever suited your project, but this is what worked for my purposes. For some of the images where my mouth was moving I used controlent to try to match the facial movements. This proved very challenging but I was able to approximate enough for the clips I needed to make it work. Once I found an img2img setting that worked for one frame I would upload all the exported frames that ffmpeg created into a folder on the cloud server, set that folder as the Input Directory in the Batch tab of img2img, and run the batch job. It’s also important to make sure that transparent background are filled in with a green color in the settings tab of Automatic1111. This resulted in a folder full of transformed images. Here's a <a href="https://youtu.be/Jo3c551NT3s" target="_blank" rel="noreferrer">great youtube video</a> that can get you started with this process.

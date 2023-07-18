@@ -80,7 +80,7 @@ const BlogPost = () => {
         
         
             </div>
-           <p style={{marginTop: "25px"}}><a href="https://www.buymeacoffee.com/andreascary"><img style={{maxWidth: "300px"}} src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=andreascary&button_colour=4e4d5d&font_colour=ffffff&font_family=Cookie&outline_colour=ffffff&coffee_colour=FFDD00" /></a></p>
+           <p style={{marginTop: "25px"}}><a href="https://www.buymeacoffee.com/andreascary"><img alt="buy me a coffee" style={{maxWidth: "300px"}} src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=andreascary&button_colour=4e4d5d&font_colour=ffffff&font_family=Cookie&outline_colour=ffffff&coffee_colour=FFDD00" /></a></p>
             <p>
             I recently released <a href='https://youtu.be/nH3mPx0Hm6c' target='_blank' rel="noreferrer" >a music video for my song “Moment of Zen”</a> that was animated using artificial intelligence. The goal of this article is to showcase a workflow that uses AI video to create a piece of finished art, not just a party trick or a cool effect. 
             </p>
@@ -103,7 +103,7 @@ For the footage of myself, I rented a green screen studio and paid a videographe
             </p>
      
             <p>
-            To get the anime feel, I made a general rule that I would create 12fps footage throughout this project.I started by experimenting with the <a rel="noreferrer" href="https://github.com/deforum-art/sd-webui-deforum" target="_blank">Deforum plugin</a>. Here’s <a rel="noreferrer"  href="https://www.youtube.com/watch?v=dqkQo2alZvU&ab_channel=MattWolfe" target="_blank">a guide to getting started with deforum.</a> I generated most of the backgrounds using text to video keyframe prompts in Deforum. The only technical expertise you really need here is being able to write JSON, and Stable Diffusion provides a link to a validation site to make sure you’ve got the syntax right. Luckily my four years professional experience as a Software Engineer came in handy here. Here’s an example of some typical JSON I’d use for these videos: 
+            To get the anime feel, I made a general rule that I would create 12fps footage throughout this project. I started by experimenting with the <a rel="noreferrer" href="https://github.com/deforum-art/sd-webui-deforum" target="_blank">Deforum plugin</a>. Here’s <a rel="noreferrer"  href="https://www.youtube.com/watch?v=dqkQo2alZvU&ab_channel=MattWolfe" target="_blank">a guide to getting started with deforum.</a> I generated most of the backgrounds using text to video keyframe prompts in Deforum. The only technical expertise you really need here is being able to write JSON, and Stable Diffusion provides a link to a validation site to make sure you’ve got the syntax right. Luckily my four years professional experience as a Software Engineer came in handy here. Here’s an example of some typical JSON I’d use for these videos, each key represents a keyframe and each value represents the prompt for the image that should be displayed at that keyframe, and then a video is created where the frames inbetween morph between the two keyframes that sandwich them: 
             </p>
             <CodeBlock>{'{'}    <br/>
             &nbsp;&nbsp;&nbsp;&nbsp;"0": "1980s office building, the haindl tower tarot  fog  stars through clouds, digital art",
@@ -177,7 +177,7 @@ ffmpeg -pattern_type glob -i '*.png' -vf "setpts=2.0*PTS" -r 24 -c:v libx264 out
 Now you have a new clip that corresponds with the original and you can drop it into a Final Cut or Adobe Premiere timeline replacing the original, apply a color key and whatever other effects you’d like in your video editor of choice. 
 
 </p>
-<p>Next I would combine the transformed clips with the backdrops I created with Deforum. The rest of the process was just utilizing traditional video editing skills. In the end I upscaled the content from 1080p to 4k using <a href="https://www.topazlabs.com/topaz-video-ai" target="_blank" rel="noferrer">Topaz Labs</a> AI upscaling software.
+<p>Next I would combine the transformed clips with the backdrops I created with Deforum. The rest of the process was just utilizing traditional video editing skills. In the end I upscaled the content from 1080p to 4k using <a href="https://www.topazlabs.com/topaz-video-ai" target="_blank" rel="noreferrer">Topaz Labs</a> AI upscaling software.
 </p>
 <p>And here’s the end result!
 </p>

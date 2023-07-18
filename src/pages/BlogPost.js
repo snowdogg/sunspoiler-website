@@ -79,7 +79,7 @@ const BlogPost = () => {
         
         
             </div>
-           
+           <p style={{marginTop: "25px"}}><a href="https://www.buymeacoffee.com/andreascary"><img style={{maxWidth: "300px"}} src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=andreascary&button_colour=4e4d5d&font_colour=ffffff&font_family=Cookie&outline_colour=ffffff&coffee_colour=FFDD00" /></a></p>
             <p>
             I recently released <a href='https://youtu.be/nH3mPx0Hm6c' target='_blank' rel="noreferrer" >a music video for my song “Moment of Zen”</a> that was animated using artificial intelligence. The goal of this article is to showcase a workflow that uses AI video to create a piece of finished art, not just a party trick or a cool effect. 
             </p>

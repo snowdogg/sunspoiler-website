@@ -63,7 +63,7 @@ const BlogPost = () => {
         <meta name="description" property="og:description" content="Using Stable Diffusion and Cloud GPU servers to create an entire art piece, not just a party trick"></meta>
         <meta name="author" content="Andreas Cary"/> 
        <meta name="description" content="Using Stable Diffusion and Cloud GPU servers to create an entire art piece, not just a party trick" />
-        <meta property="og:image" content="/images/mozscreenshot.png" />
+        <meta property="og:image" content="https://www.sunspoiler.com/images/mozscreenshot.png" />
         
         </Helmet>
         <PageContainer>

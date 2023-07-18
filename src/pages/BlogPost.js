@@ -67,8 +67,8 @@ const BlogPost = () => {
             {id === "ai-music-video" ?   <><Header>How I Used AI To Make An Animated Music Video For Under $500
             </Header> 
             <Image style={{float: "left",marginRight: "10px", width:"100px", borderRadius: "100px"}}src="/images/profilepic.jpg" />
-            <div >
-            <h3 style={{marginTop:"40px", marginBottom: "0px"}}>Andreas Cary </h3>
+            <div style={{marginBottom: "40px"}}>
+            <h3 style={{ marginBottom: "0px"}}>Andreas Cary </h3>
             <div style={{fontSize: "13px", fontStyle:"bold"}}> <a style={{textDecoration: "none"}} href="/resume.pdf" target="_blank">Full Stack Engineer</a>, <a style={{textDecoration: "none"}} href="/" target="_blank">Musician</a>, AI Artist</div>
             <div style={{fontSize: "13px", fontStyle:"italic"}}>July 18, 2023</div>
             <div><a rel="noreferrer" style={{fontSize: "15px",  fontWeight:"700"}}href="https://www.linkedin.com/in/andreas-cary-02b074120/" target="_blank">

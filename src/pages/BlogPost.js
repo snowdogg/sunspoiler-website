@@ -59,11 +59,12 @@ const BlogPost = () => {
         <Container>
         <Helmet>
         <title>How I Used AI To Make An Animated Music Video For Under $500</title>
+        <meta property="og:image" content="https://www.sunspoiler.com/images/mozscreenshot.png" />
         <meta name="title" property="og:title" content="How I Used AI To Make An Animated Music Video For Under $500"/> 
         <meta name="description" property="og:description" content="Using Stable Diffusion and Cloud GPU servers to create an entire art piece, not just a party trick"></meta>
         <meta name="author" content="Andreas Cary"/> 
        <meta name="description" content="Using Stable Diffusion and Cloud GPU servers to create an entire art piece, not just a party trick" />
-        <meta property="og:image" content="https://www.sunspoiler.com/images/mozscreenshot.png" />
+
         
         </Helmet>
         <PageContainer>

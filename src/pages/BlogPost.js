@@ -86,18 +86,20 @@ const BlogPost = () => {
         
             </div>
            
-           <YouTube videoId={"nH3mPx0Hm6c"} />
+       
             <p>
             I recently released <a href='https://youtu.be/nH3mPx0Hm6c' target='_blank' rel="noreferrer" >a music video for my song “Moment of Zen”</a> that was animated using artificial intelligence. The goal of this article is to showcase a workflow that uses AI video to create a piece of finished art, not just a party trick or a cool effect. 
             </p>
-            <Image src="/images/mozvideo1.gif"></Image>
+            <YouTube videoId={"nH3mPx0Hm6c"} />
+            
             <p>
             So first of all, the song was very much written, produced and performed by a human, myself. I’m blending vocoders and big synths with more human elements like my untreated voice and acoustic guitar to show the balance between the automated and robotic lifestyle many of us are trapped in in modern society and the human, creative side of us that is often stifled.
             </p>
             <p>
             I knew I wanted the music video to have an animated feel to it but I didn’t have a budget for the kind of animation I wanted, namely something with an anime feel that could evoke the imagery that song demands. Then I started experimenting with Stable Diffusion using <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank" rel="noreferrer"> Automatic1111 WebUI</a>. I’ve included some of the tutorial videos that guided me along the way.
             </p>
-            <Image src="/images/mozvideo2.gif"></Image>
+            <Image src="/images/mozvideo1.gif"></Image>
+     
             <p>
             I did most of the Stable Diffusion work using a Cloud GPU provider called runpod.io that provided me an Nvidia RTX a5000 at 44 cents a minute when running, and around 3 cents when inactive. To install all the checkpoints and models you need, you’ll need a small amount of linux knowledge like wget and a basic understanding of the stable diffusion folder/file structure. Prompt Queen provides a <a rel="noreferrer" href='https://youtu.be/--Z03wbDp_s' target='_blank'>fantastic guide</a> on how to get started with <a rel="noreferrer"  href='https://runpod.io' target='_blank'>runpod.io</a>.  If you don't have time for that, you can use <a target="_blank" rel="noreferrer" href="https://rundiffusion.com">Run Diffusion</a> that costs more but has all the major checkpoints and plugins already installed. I started out on Run Diffusion but moved to RunPod once I got the hang of things and needed to run long GPU-intenstive batch jobs at a lower rate. Sidenote, I used the <a rel="noreferrer" href='https://civitai.com/models/1102/synthwavepunk' target='_blank'>Synthwave Punk</a> model for the majority of my edits.
             </p>
@@ -109,6 +111,7 @@ For the footage of myself, I rented a green screen studio and paid a videographe
             </p>
      
             <p>
+            <Image src="/images/mozvideo2.gif"></Image>
             To get the anime feel, I made a general rule that I would create 12fps footage throughout this project. I started by experimenting with the <a rel="noreferrer" href="https://github.com/deforum-art/sd-webui-deforum" target="_blank">Deforum plugin</a>. Here’s <a rel="noreferrer"  href="https://www.youtube.com/watch?v=dqkQo2alZvU&ab_channel=MattWolfe" target="_blank">a guide to getting started with deforum.</a> I generated most of the backgrounds using text to video keyframe prompts in Deforum. The only technical expertise you really need here is being able to write JSON, and Stable Diffusion provides a link to a validation site to make sure you’ve got the syntax right. Luckily my four years professional experience as a Software Engineer came in handy here. Here’s an example of some typical JSON I’d use for these videos, each key represents a keyframe and each value represents the prompt for the image that should be displayed at that keyframe, and then a video is created where the frames inbetween morph between the two keyframes that sandwich them: 
             </p>
             <CodeBlock>{'{'}    <br/>

@@ -136,7 +136,7 @@ I took the live footage and used <a href="https://ffmpeg.org/" rel="noreferrer" 
 
 </CodeBlock>
         <Image src="/images/mozvideo3.gif"></Image>
-<p>I’m not an expert in using ffmpeg so I had ChatGPT 4 write my ffmpeg commands and a little bit of bash scripting to manipulate the frames. If you understand what you’re trying to do with the footage and have a basic understanding of a unix terminal this should be pretty straightforward especially with ChatGPT as your copilot. You can also use your video editing program of choice to do the same thing.</p>
+<p>I had ChatGPT 4 write my ffmpeg commands and a little bit of bash scripting to manipulate the frames. If you understand what you’re trying to do with the footage and have a basic understanding of a unix terminal this should be pretty straightforward especially with ChatGPT as your copilot. You can also use your video editing program of choice to do the same thing.</p>
 
 <p>Next I would take one of the newly exported frames and load it into Automatic1111’s img2img tab. My usual formula was to set the width and height to 980x540, essentially ½ of a 1080p video frame size. As you can see in the ffmpeg command above, I’d already resized the frames of the video to 980:540 using the scale argument. The key here is to use a high CFG scale and a low denoising strength and then play around with the prompt and the amount of denoising until you find the style you like and then lock in the seed as you see fit. I used “Interrogate Clip” to get my prompt started and just kind of riffed from there: </p>
 

@@ -6,7 +6,7 @@ import Marquee from "../components/Marquee";
 import YouTube from "../components/Youtube";
 import MusicPlatformList from "../components/MusicPlatformList";
 import About from "../components/About";
-
+import Helmet from 'react-helmet';
 const Container = styled.div`
   background: rgb(22, 22, 22);
   height: 100vh;
@@ -61,6 +61,9 @@ const musicPlatforms = [
 function Homepage() {
   return (
     <Container>
+    <Helment>
+    <meta name="title" property="og:title" content="Sun Spoiler"/> 
+    </Helment>
       <Navigation />
       <MarqueeContainer>
         <Marquee content={"Nothing Is Real. Modern Life Is A Scam."} />

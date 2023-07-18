@@ -61,9 +61,9 @@ const musicPlatforms = [
 function Homepage() {
   return (
     <Container>
-    <Helment>
+    <Helmet>
     <meta name="title" property="og:title" content="Sun Spoiler"/> 
-    </Helment>
+    </Helmet>
       <Navigation />
       <MarqueeContainer>
         <Marquee content={"Nothing Is Real. Modern Life Is A Scam."} />

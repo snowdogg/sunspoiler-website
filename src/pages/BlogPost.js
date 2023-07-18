@@ -60,7 +60,8 @@ const BlogPost = () => {
         <Helmet>
         <title>How I Used AI To Make An Animated Music Video For Under $500</title>
         <meta name="description" content="How I Used AI To Make An Animated Music Video For Under $500" />
-      </Helmet>
+       
+        </Helmet>
         <PageContainer>
             {/* <h2>Blog Post {id}</h2> */}
             {id === "ai-music-video" ?   <><Header>How I Used AI To Make An Animated Music Video For Under $500
@@ -186,6 +187,7 @@ Now you have a new clip that corresponds with the original and you can drop it i
 
 
 <p></p>
+
   </>
 
 : ""}

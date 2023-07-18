@@ -122,7 +122,7 @@ For the footage of myself, I rented a green screen studio and paid a videographe
 <Video controls src={"/images/deforum_video.mp4#t=0.001"}></Video>
 <p>
 
-Then in the positive prompts applied to all keyframes I’d put something like “blue light, anime, synthwave, cyberpunk” or whatever I deemed appropriate for that shot. The most consistent negative prompt I used was “text” so there wouldn’t be garbled words in my videos.
+In the positive prompts applied to all keyframes I’d put something like “blue light, anime, synthwave, cyberpunk” or whatever I deemed appropriate for that shot. The most consistent negative prompt I used was “text” so there wouldn’t be garbled words in my videos.
 
 
 </p>
@@ -135,10 +135,11 @@ I took the live footage and used <a href="https://ffmpeg.org/" rel="noreferrer" 
 <CodeBlock>ffmpeg -i input.mov -vf "select=not(mod(n\,2)),scale=980:540" -vsync vfr output_%04d.png
 
 </CodeBlock>
-        
+        <Image src="/images/mozvideo3.gif"></Image>
 <p>I’m not an expert in using ffmpeg so I had ChatGPT 4 write my ffmpeg commands and a little bit of bash scripting to manipulate the frames. If you understand what you’re trying to do with the footage and have a basic understanding of a unix terminal this should be pretty straightforward especially with ChatGPT as your copilot. You can also use your video editing program of choice to do the same thing.</p>
 
 <p>Next I would take one of the newly exported frames and load it into Automatic1111’s img2img tab. My usual formula was to set the width and height to 980x540, essentially ½ of a 1080p video frame size. As you can see in the ffmpeg command above, I’d already resized the frames of the video to 980:540 using the scale argument. The key here is to use a high CFG scale and a low denoising strength and then play around with the prompt and the amount of denoising until you find the style you like and then lock in the seed as you see fit. I used “Interrogate Clip” to get my prompt started and just kind of riffed from there: </p>
+
 <CodeBlock>
 masterpiece of a man with long shoulder-length hair with a face like {'[[[<hypernet:Andreas Emmanuel:1>]]]'} playing a guitar on stage, promotional image,
 wearing a choker, cyberpunk, digital art, {'[[anime]]'}, comic, guitar, painting, youthful, guitar neck, smooth edges,

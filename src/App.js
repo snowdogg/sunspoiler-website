@@ -17,6 +17,11 @@ function App() {
     <>
     <Helmet>
     <base href="/" />
+    <meta property="og:image" content="/images/mozscreenshot.png" />
+
+    <link rel="icon" type="image/png" sizes="64x64" href="/images/icon64.png" />
+
+
   </Helmet>
     <Router>
   

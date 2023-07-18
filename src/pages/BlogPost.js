@@ -85,7 +85,8 @@ const BlogPost = () => {
         
         
             </div>
-           <p style={{marginTop: "25px"}}><a href="https://www.buymeacoffee.com/andreascary"><img alt="buy me a coffee" style={{maxWidth: "300px"}} src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=andreascary&button_colour=4e4d5d&font_colour=ffffff&font_family=Cookie&outline_colour=ffffff&coffee_colour=FFDD00" /></a></p>
+           
+           <YouTube videoId={"nH3mPx0Hm6c"} />
             <p>
             I recently released <a href='https://youtu.be/nH3mPx0Hm6c' target='_blank' rel="noreferrer" >a music video for my song “Moment of Zen”</a> that was animated using artificial intelligence. The goal of this article is to showcase a workflow that uses AI video to create a piece of finished art, not just a party trick or a cool effect. 
             </p>
@@ -187,6 +188,7 @@ Now you have a new clip that corresponds with the original and you can drop it i
 <p>And here’s the end result!
 </p>
 <YouTube videoId={"nH3mPx0Hm6c"} />
+<p style={{marginTop: "25px"}}><a href="https://www.buymeacoffee.com/andreascary"><img alt="buy me a coffee" style={{maxWidth: "300px"}} src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=andreascary&button_colour=4e4d5d&font_colour=ffffff&font_family=Cookie&outline_colour=ffffff&coffee_colour=FFDD00" /></a></p>
 <p>If you want to contact me about a Full Stack Software Engineer position or other work opportunities, you can view my <a style={{fontSize: "15px",  fontWeight:"700"}} href="/resume.pdf" target="_blank">Professional Resume</a> and reach out to me at <a style={{fontSize: "15px",  fontWeight:"700"}} href='mailto:andreascary@gmail.com' target='_blank' rel="noreferrer">andreascary@gmail.com</a> or connect on <a rel="noreferrer" style={{fontSize: "15px",  fontWeight:"700"}}href="https://www.linkedin.com/in/andreas-cary-02b074120/" target="_blank">LinkedIn</a></p>
 
 <p>If you're interested in my music, check out all my links at <a href='/' target="_blank" rel="noreferrer" style={{fontSize: "15px",  fontWeight:"700"}}>www.sunspoiler.com</a> or contact me at <a href='mailto:info@sunspoiler.com' target='_blank' rel="noreferrer" style={{fontSize: "15px",  fontWeight:"700"}}>info@sunspoiler.com</a></p>

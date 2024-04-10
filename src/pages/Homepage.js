@@ -37,6 +37,11 @@ const CTA = styled.h1`
   background: rgb(22, 22, 22);
   display: flex;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
 `;
 
 const musicPlatforms = [
@@ -66,12 +71,14 @@ function Homepage() {
     </Helmet>
       <Navigation />
       <MarqueeContainer>
-        <Marquee content={"Nothing Is Real. Modern Life Is A Scam."} />
+        <Marquee content={"Dystopia Pop Vol. 1 April 22"} />
       </MarqueeContainer>
-      <CTA>WATCH</CTA>
-      <YouTube videoId={"nH3mPx0Hm6c"} />
+     
       <CTA>LISTEN</CTA>
       <MusicPlatformList musicPlatforms={musicPlatforms}></MusicPlatformList>
+      <CTA>WATCH</CTA>
+      {/* <YouTube  videoId={"XRJ62bzlJ-Q"} /> */}
+      <YouTube videoId={"nH3mPx0Hm6c"} />
       <CTA>ABOUT SUN SPOILER</CTA>
       <About />
       <Footer>

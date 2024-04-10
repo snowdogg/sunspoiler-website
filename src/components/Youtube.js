@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';import YouTube from 'react-youtube';
+import React, { useState, useEffect } from 'react';
+import YouTube from 'react-youtube';
 import styled from 'styled-components';
 
 const Container = styled.div`
     text-align: center;
     
-    margin: 0 auto;
+    margin: 20px auto;
 `
 const MyComponent = ({videoId}) => {
 

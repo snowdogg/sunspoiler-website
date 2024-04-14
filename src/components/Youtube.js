@@ -24,9 +24,10 @@ const MyComponent = ({videoId}) => {
   }, []);
 
   const opts = {
-    width: windowWidth >= 1280 ? '925' : (windowWidth >= 500  ? '90%' : '100%'),
-    height: '450'
-  };
+    height: '450',
+    width: windowWidth >= 1280 ? '925' : (windowWidth >= 500 ? '90%' : '300px'), // 300px max width for small screens
+};
+
   return (
     <Container>
       <YouTube opts={opts} videoId={videoId} />

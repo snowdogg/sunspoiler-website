@@ -70,21 +70,14 @@ const About = () => {
       <CenterContainer2>
         <p>
           <b>Sun Spoiler</b> is the new project from Hollywood, CA
-          songwriter/producer/guitarist Andreas Emmanuel. The debut two track
-          release includes A side Moment Of Zen and AA side Need to Know,
-          showcasing experimental synth pop stylings that recall influences from
-          Daft Punk to Pink Floyd with a healthy dose of the Scarface
-          soundtrack.
+          songwriter/producer/guitarist Andreas Emmanuel. The six track EP Dystopia Pop Vol. 1
+          is out now digitally and is coming to vinyl late this Summer.
+          
           </p>
         
       </CenterContainer2>
       <br></br>      <br></br>
-      <CenterContainer2>
-      <p> <b>Moment of Zen</b> is accompanied by a self-directed music
-          video that uses generative AI animation to bring to life the song’s
-          ghosttronica vision of present-day dystopia.
-        </p>
-      </CenterContainer2>
+      
       <br></br>      <br></br>
     </>
   );

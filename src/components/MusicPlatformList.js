@@ -15,6 +15,7 @@ const ButtonContainer = styled.div`
     align-items: center;
     margin: 0 auto;
     max-width: 500px;
+    display: flex;
     
 `
 
@@ -23,9 +24,9 @@ const Button = styled.a`
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-font-smoothing: antialiased;
     box-sizing: inherit;
-    background-color: rgb(255, 255, 255);
+    // background-color: rgb(255, 255, 255);
     position: relative;
-    align-items: center;
+    align-items: left;
     text-decoration: none;
     overflow-wrap: break-word;
     cursor: pointer;
@@ -45,23 +46,39 @@ const Button = styled.a`
     padding-right: 40px; */}
     padding-top: 8px;
     padding-bottom: 8px;
-    min-height: 56px;
-    border-radius: 48px;
-    color: rgb(0, 0, 0);
+    min-height: 20px;
+    // border-radius: 48px;
+    color: white; //rgb(0, 0, 0);
     text-shadow: none;
     width: 100%;
     font-size: 14px;
 `
-const MusicPlatformList = ({ musicPlatforms }) => {
+const MusicPlatformList = ({ musicPlatforms, simple }) => {
   return (
     <Container>
-      {musicPlatforms.map((platform, index) => (
+      {simple ?    
+      musicPlatforms.map((platform, index) => (
+        
+         
+   
+        <a style={{padding: "20px"}} href={platform.url} target="_blank" rel="noreferrer" key={index}>
+        <img width="30px" height="30px" src={platform.icon} alt={platform.name}/>
+        </a>
+      ))  
+      : 
+      
+      musicPlatforms.map((platform, index) => (
         <ButtonContainer>
+          <img width="30px" height="30px" src={platform.icon} alt={platform.name}/>
+   
         <Button href={platform.url} target="_blank" key={index}>
-   {platform.name}
+        {platform.name}
         </Button>
         </ButtonContainer>
-      ))}
+      )) 
+      
+      }
+  
     </Container>
   );
 };

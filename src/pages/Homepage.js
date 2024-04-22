@@ -9,11 +9,61 @@ import About from "../components/About";
 import Helmet from 'react-helmet';
 import { useEffect, useState } from "react";
 
+const Image = styled.img`
+  ${'' /* background-image: url("/images/hollywood.png"); */}
+  width: 80%;
+  height: 80%;
+`
+
 const Container = styled.div`
   background: rgb(22, 22, 22);
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
+`;
+
+
+const CenterContainer = styled.div`
+  p{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    box-sizing: inherit;
+    letter-spacing: normal;
+    text-transform: none;
+    width: 100%;
+    font-family: Helvetica, arial, sans-serif;
+    margin-top: 0px;
+    overflow-wrap: break-word;
+    color: rgb(247, 247, 247);
+    font-weight: 400;
+    flex-grow: 1;
+    line-height: 1.5;
+    max-width: 100%;
+    font-size: 16px;
+    margin-bottom: 0 !important;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    letter-spacing: normal;
+    text-transform: none;
+    font-family: Helvetica, arial, sans-serif;
+    overflow-wrap: break-word;
+    color: rgb(247, 247, 247);
+    font-weight: 400;
+    font-size: 16px;
+    box-sizing: inherit;
+    line-height: 1.8;
+    margin: 0;
+  }
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  color: white;
+  margin: 0 10% 0 10%;
+  text-align: center;
 `;
 
 const MarqueeContainer = styled.div`
@@ -107,7 +157,7 @@ function Homepage() {
       </Helmet>
       <Navigation />
       <MarqueeContainer>
-        <Marquee content={"Dystopia Pop Vol. 1 April 22"} />
+        <Marquee content={"Dystopia Pop Vol. 1 Out Now"} />
       </MarqueeContainer>
       <BlockWrapper />
       {windowWidth <= 768 ? 
@@ -115,11 +165,19 @@ function Homepage() {
      <BlockWrapper>
       <CTA>LISTEN</CTA>
       <MusicPlatformList musicPlatforms={musicPlatforms} simple></MusicPlatformList>
+     
       </BlockWrapper>
       <BlockWrapper>
       <CTA>FOLLOW</CTA>
       <MusicPlatformList musicPlatforms={socials} simple> </MusicPlatformList>
       </BlockWrapper>
+     <BlockWrapper> <CenterContainer>
+      <a href="https://open.spotify.com/album/7Deo3uv2sqxH2jAgdUjdN0" target="_blank" >
+      <Image src="/images/dystopiaPop.png" />
+      </a>
+      </CenterContainer>
+      </BlockWrapper>
+    
       </>
 
         : ""}
@@ -135,11 +193,19 @@ function Homepage() {
      <BlockWrapper style={{marginTop: "50px"}}>
       <CTA>LISTEN</CTA>
       <MusicPlatformList musicPlatforms={musicPlatforms} simple></MusicPlatformList>
+      
       </BlockWrapper>
       <BlockWrapper>
       <CTA>FOLLOW</CTA>
       <MusicPlatformList musicPlatforms={socials} simple> </MusicPlatformList>
       </BlockWrapper>
+      <BlockWrapper>
+      <CenterContainer> 
+        <Image src="/images/dystopiaPop.png" />
+      </CenterContainer>
+      </BlockWrapper>
+     
+    
       </>
 
         : ""}

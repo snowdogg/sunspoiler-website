@@ -55,8 +55,10 @@ const CenterContainer2 = styled.div`
 
 const Image = styled.img`
   ${'' /* background-image: url("/images/hollywood.png"); */}
-  width: 80%;
-  height: 80%;
+  max-width: 40%;
+  @media (max-width: 768px) { 
+    max-width: 80%;
+  }
 `
 
 
@@ -64,7 +66,7 @@ const About = () => {
   return (
     <>
       <CenterContainer>
-        <Image src="/images/hollywood.png" />
+        <Image src="/images/_DSC6988.jpg" />
       </CenterContainer>
       <br></br>      <br></br>
       <CenterContainer2>

@@ -116,7 +116,7 @@ const socials = [
 const musicPlatforms = [
   {
     name: "Spotify",
-    url: "https://open.spotify.com/artist/6pW8KV09KcQOrT2CigJCCU?si=lGPCK3TASn69V9dmMr53zQ&nd=1",
+    url: "https://open.spotify.com/album/7Deo3uv2sqxH2jAgdUjdN0",
     icon: "/images/spotify.svg",
   },
   {

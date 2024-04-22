@@ -15,6 +15,18 @@ const Image = styled.img`
   height: 80%;
 `
 
+
+const AlbumArt = styled.img`
+  ${'' /* background-image: url("/images/hollywood.png"); */}
+  width: 80%;
+  height: 80%;
+  @media (max-width: 768px) {
+    width: 100%;
+  
+    height: 100%;
+  }
+`
+
 const Container = styled.div`
   background: rgb(22, 22, 22);
   height: 100vh;
@@ -173,7 +185,7 @@ function Homepage() {
       </BlockWrapper>
      <BlockWrapper> <CenterContainer>
       <a href="https://open.spotify.com/album/7Deo3uv2sqxH2jAgdUjdN0" target="_blank" >
-      <Image src="/images/dystopiaPop.png" />
+      <AlbumArt src="/images/dystopiaPop.png" />
       </a>
       </CenterContainer>
       </BlockWrapper>
@@ -201,7 +213,10 @@ function Homepage() {
       </BlockWrapper>
       <BlockWrapper>
       <CenterContainer> 
-        <Image src="/images/dystopiaPop.png" />
+      <a href="https://open.spotify.com/album/7Deo3uv2sqxH2jAgdUjdN0" target="_blank" >
+
+        <AlbumArt src="/images/dystopiaPop.png" />
+        </a>
       </CenterContainer>
       </BlockWrapper>
      

@@ -19,7 +19,7 @@ const Image = styled.img`
 const AlbumArt = styled.img`
   ${'' /* background-image: url("/images/hollywood.png"); */}
   width: 80%;
-  height: 80%;
+  aspect-ratio: 1/1;
   @media (max-width: 768px) {
     width: 100%;
   

@@ -225,11 +225,11 @@ function Homepage() {
       </>
 
         : ""}
-        <div style={{ width: "100%", display: "flex" }}>
+        {/* <div style={{ width: "100%", display: "flex" }}>
           <video style={{ maxWidth: "400px", margin: "0 auto" }} autoPlay loop muted controls>
             <source src="/images/dystopiaPopTeaser.mp4" type="video/mp4"></source>
           </video>
-        </div>
+        </div> */}
       </BlockWrapper>
       
       <BlockWrapper>

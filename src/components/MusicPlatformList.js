@@ -61,7 +61,7 @@ const MusicPlatformList = ({ musicPlatforms, simple }) => {
         
          
    
-        <a style={{padding: "20px"}} href={platform.url} target="_blank" rel="noreferrer" key={index}>
+        <a style={{padding: "15px"}} href={platform.url} target="_blank" rel="noreferrer" key={index}>
         <img width="30px" height="30px" src={platform.icon} alt={platform.name}/>
         </a>
       ))  

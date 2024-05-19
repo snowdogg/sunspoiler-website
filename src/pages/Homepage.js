@@ -146,6 +146,11 @@ const musicPlatforms = [
     url: "https://sunspoiler.bandcamp.com/",
     icon: "/images/bandcamp.svg",
   },
+  {
+    name: "Soundcloud",
+    url: "https://soundcloud.com/sunspoiler",
+    icon: "images/soundcloud.svg"
+  }
 ];
 
 function Homepage() {

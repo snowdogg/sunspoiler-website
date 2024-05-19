@@ -202,12 +202,14 @@ function Homepage() {
             <MusicPlatformList musicPlatforms={musicPlatforms} featuredIndex={0} simple></MusicPlatformList>
 
           </BlockWrapper>
-          <BlockWrapper style={{marginBottom: "0px", padding: "20px"}}>
+          <BlockWrapper style={{marginBottom: "0px", paddingTop: "20px",paddingLeft: "20px", paddingRight: "20px", paddingBottom: "0px"}}>
           
         <div style={{textAlign: "center", marginBottom: "0px"}} class="sender-form-field" data-sender-form-id="lwcy5wd5ammw1ad4ftd"></div>
 
         </BlockWrapper>
-          <BlockWrapper>
+        
+          <BlockWrapper style={{marginBottom: "20px"}}>
+            
             <CTA>FOLLOW</CTA>
             <MusicPlatformList musicPlatforms={socials} simple> </MusicPlatformList>
           </BlockWrapper>
@@ -233,11 +235,11 @@ function Homepage() {
               <MusicPlatformList musicPlatforms={musicPlatforms} simple></MusicPlatformList>
 
             </BlockWrapper>
-            <BlockWrapper style={{marginBottom: "20px"}}>
+            <BlockWrapper style={{marginBottom: "0px"}}>
               <CTA>FOLLOW</CTA>
               <MusicPlatformList musicPlatforms={socials} simple> </MusicPlatformList>
             </BlockWrapper>
-            <BlockWrapper style={{marginBottom: "0px", padding: "20px"}}>
+            <BlockWrapper style={{marginBottom: "20px", padding: "20px"}}>
         <div style={{textAlign: "center", marginBottom: "0px"}} class="sender-form-field" data-sender-form-id="lwcy5wd5ammw1ad4ftd"></div>
 
         </BlockWrapper>

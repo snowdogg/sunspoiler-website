@@ -264,7 +264,7 @@ function Homepage() {
         <About />
       </BlockWrapper>
       <Footer>
-        Copyright © 2023 Sun Spoiler - All Rights Reserved. Contact
+        Copyright © 2024 Sun Spoiler - All Rights Reserved. Contact
         info@sunspoiler.com for inquiries.
       </Footer>
 

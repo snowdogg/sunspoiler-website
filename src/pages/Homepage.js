@@ -190,26 +190,23 @@ function Homepage() {
       
       {windowWidth <= 768 ?
         <>
-         <BlockWrapper style={{marginBottom: "0px", padding: "20px"}}>
-        <div style={{textAlign: "center", marginBottom: "0px"}} class="sender-form-field" data-sender-form-id="lwcy5wd5ammw1ad4ftd"></div>
-
-        </BlockWrapper>
-          <BlockWrapper>
+       
+          <BlockWrapper style={{marginBottom: "0px"}}>
             
             <CTA>LISTEN</CTA>
             <MusicPlatformList musicPlatforms={musicPlatforms} simple></MusicPlatformList>
 
           </BlockWrapper>
+          <BlockWrapper style={{marginBottom: "0px", padding: "20px"}}>
+          
+        <div style={{textAlign: "center", marginBottom: "0px"}} class="sender-form-field" data-sender-form-id="lwcy5wd5ammw1ad4ftd"></div>
+
+        </BlockWrapper>
           <BlockWrapper>
             <CTA>FOLLOW</CTA>
             <MusicPlatformList musicPlatforms={socials} simple> </MusicPlatformList>
           </BlockWrapper>
-          <BlockWrapper> <CenterContainer>
-            <a href="https://open.spotify.com/album/7Deo3uv2sqxH2jAgdUjdN0" target="_blank" >
-              <AlbumArt src="/images/dystopiaPop.png" />
-            </a>
-          </CenterContainer>
-          </BlockWrapper>
+         
 
         </>
 
@@ -251,7 +248,12 @@ function Homepage() {
 
           </>
 
-          : ""}
+          :  <BlockWrapper> <CenterContainer>
+          <a href="https://open.spotify.com/album/7Deo3uv2sqxH2jAgdUjdN0" target="_blank" >
+            <AlbumArt src="/images/dystopiaPop.png" />
+          </a>
+        </CenterContainer>
+        </BlockWrapper>}
         {/* <div style={{ width: "100%", display: "flex" }}>
           <video style={{ maxWidth: "400px", margin: "0 auto" }} autoPlay loop muted controls>
             <source src="/images/dystopiaPopTeaser.mp4" type="video/mp4"></source>

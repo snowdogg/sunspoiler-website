@@ -199,7 +199,7 @@ function Homepage() {
           <BlockWrapper style={{marginBottom: "0px"}}>
             
             <CTA>LISTEN</CTA>
-            <MusicPlatformList musicPlatforms={musicPlatforms} simple></MusicPlatformList>
+            <MusicPlatformList musicPlatforms={musicPlatforms} featuredIndex={0} simple></MusicPlatformList>
 
           </BlockWrapper>
           <BlockWrapper style={{marginBottom: "0px", padding: "20px"}}>

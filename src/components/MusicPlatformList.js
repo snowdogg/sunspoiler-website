@@ -52,17 +52,30 @@ const Button = styled.a`
     text-shadow: none;
     width: 100%;
     font-size: 14px;
+
+  
+  }
 `
-const MusicPlatformList = ({ musicPlatforms, simple }) => {
+const MusicPlatformList = ({ musicPlatforms, simple, featuredIndex }) => {
   return (
     <Container>
+      <style>
+        {`  .featured {
+      animation: jump 1s ease-in-out infinite;
+    }
+
+    @keyframes jump {
+      0%, 100% {
+          transform: translateY(0);
+      }
+      50% {
+          transform: translateY(-10px);
+      }`}
+      </style>
       {simple ?    
       musicPlatforms.map((platform, index) => (
-        
-         
-   
-        <a style={{padding: "15px"}} href={platform.url} target="_blank" rel="noreferrer" key={index}>
-        <img width="30px" height="30px" src={platform.icon} alt={platform.name}/>
+        <a style={{padding: "15px"}} href={platform.url} target="_blank" rel="noreferrer" key={index} >
+        <img className={ index===featuredIndex ? "featured" : ""} width="30px" height="30px" src={platform.icon} alt={platform.name}/>
         </a>
       ))  
       : 

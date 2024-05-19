@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Helmet from 'react-helmet';
 
 const Container = styled.div`
     text-align: center;
@@ -58,7 +59,9 @@ const Button = styled.a`
 `
 const MusicPlatformList = ({ musicPlatforms, simple, featuredIndex }) => {
   return (
+  
     <Container>
+        <Helmet>
       <style>
         {`  .featured {
       animation: jump 1s ease-in-out infinite;
@@ -72,6 +75,7 @@ const MusicPlatformList = ({ musicPlatforms, simple, featuredIndex }) => {
           transform: translateY(-10px);
       }`}
       </style>
+      </Helmet>
       {simple ?    
       musicPlatforms.map((platform, index) => (
         <a style={{padding: "15px"}} href={platform.url} target="_blank" rel="noreferrer" key={index} >

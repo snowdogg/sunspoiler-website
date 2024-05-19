@@ -166,72 +166,99 @@ function Homepage() {
     <Container>
       <Helmet>
         <meta name="title" property="og:title" content="Sun Spoiler" />
+        <script>
+        {`  (function (s, e, n, d, er) {
+            s['Sender'] = er;
+          s[er] = s[er] || function () {
+            (s[er].q = s[er].q || []).push(arguments)
+          }, s[er].l = 1 * new Date();
+          var a = e.createElement(n),
+          m = e.getElementsByTagName(n)[0];
+          a.async = 1;
+          a.src = d;
+          m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+          sender('fa131d55e64189')
+          `}
+        </script>
       </Helmet>
       <Navigation />
       <MarqueeContainer>
         <Marquee content={"Dystopia Pop Vol. 1 Out Now"} />
       </MarqueeContainer>
-      <BlockWrapper />
-      {windowWidth <= 768 ? 
-      <>
-     <BlockWrapper>
-      <CTA>LISTEN</CTA>
-      <MusicPlatformList musicPlatforms={musicPlatforms} simple></MusicPlatformList>
      
-      </BlockWrapper>
-      <BlockWrapper>
-      <CTA>FOLLOW</CTA>
-      <MusicPlatformList musicPlatforms={socials} simple> </MusicPlatformList>
-      </BlockWrapper>
-     <BlockWrapper> <CenterContainer>
-      <a href="https://open.spotify.com/album/7Deo3uv2sqxH2jAgdUjdN0" target="_blank" >
-      <AlbumArt src="/images/dystopiaPop.png" />
-      </a>
-      </CenterContainer>
-      </BlockWrapper>
-    
-      </>
+      
+      {windowWidth <= 768 ?
+        <>
+         <BlockWrapper style={{marginBottom: "0px", padding: "20px"}}>
+        <div style={{textAlign: "center", marginBottom: "0px"}} class="sender-form-field" data-sender-form-id="lwcy5wd5ammw1ad4ftd"></div>
+
+        </BlockWrapper>
+          <BlockWrapper>
+            
+            <CTA>LISTEN</CTA>
+            <MusicPlatformList musicPlatforms={musicPlatforms} simple></MusicPlatformList>
+
+          </BlockWrapper>
+          <BlockWrapper>
+            <CTA>FOLLOW</CTA>
+            <MusicPlatformList musicPlatforms={socials} simple> </MusicPlatformList>
+          </BlockWrapper>
+          <BlockWrapper> <CenterContainer>
+            <a href="https://open.spotify.com/album/7Deo3uv2sqxH2jAgdUjdN0" target="_blank" >
+              <AlbumArt src="/images/dystopiaPop.png" />
+            </a>
+          </CenterContainer>
+          </BlockWrapper>
+
+        </>
 
         : ""}
+       
       <BlockWrapper>
         <CTA>WATCH</CTA>
 
 
-        
+
         <YouTube videoId={"XRJ62bzlJ-Q"} />
         <YouTube videoId={"nH3mPx0Hm6c"} />
         {/* <YouTube videoId={"m02jaxRKuDs"}/> */}
-        {windowWidth > 768 ? 
-      <>
-     <BlockWrapper style={{marginTop: "50px"}}>
-      <CTA>LISTEN</CTA>
-      <MusicPlatformList musicPlatforms={musicPlatforms} simple></MusicPlatformList>
-      
-      </BlockWrapper>
-      <BlockWrapper>
-      <CTA>FOLLOW</CTA>
-      <MusicPlatformList musicPlatforms={socials} simple> </MusicPlatformList>
-      </BlockWrapper>
-      <BlockWrapper>
-      <CenterContainer> 
-      <a href="https://open.spotify.com/album/7Deo3uv2sqxH2jAgdUjdN0" target="_blank" >
+        {windowWidth > 768 ?
+          <>
+          
+            <BlockWrapper style={{ marginTop: "50px" }}>
+              <CTA>LISTEN</CTA>
+              <MusicPlatformList musicPlatforms={musicPlatforms} simple></MusicPlatformList>
 
-        <AlbumArt src="/images/dystopiaPop.png" />
-        </a>
-      </CenterContainer>
-      </BlockWrapper>
-     
-    
-      </>
+            </BlockWrapper>
+            <BlockWrapper style={{marginBottom: "20px"}}>
+              <CTA>FOLLOW</CTA>
+              <MusicPlatformList musicPlatforms={socials} simple> </MusicPlatformList>
+            </BlockWrapper>
+            <BlockWrapper style={{marginBottom: "0px", padding: "20px"}}>
+        <div style={{textAlign: "center", marginBottom: "0px"}} class="sender-form-field" data-sender-form-id="lwcy5wd5ammw1ad4ftd"></div>
 
-        : ""}
+        </BlockWrapper>
+            <BlockWrapper>
+              <CenterContainer>
+                <a href="https://open.spotify.com/album/7Deo3uv2sqxH2jAgdUjdN0" target="_blank" >
+
+                  <AlbumArt src="/images/dystopiaPop.png" />
+                </a>
+              </CenterContainer>
+            </BlockWrapper>
+
+
+          </>
+
+          : ""}
         {/* <div style={{ width: "100%", display: "flex" }}>
           <video style={{ maxWidth: "400px", margin: "0 auto" }} autoPlay loop muted controls>
             <source src="/images/dystopiaPopTeaser.mp4" type="video/mp4"></source>
           </video>
         </div> */}
       </BlockWrapper>
-      
+
       <BlockWrapper>
         <CTA>ABOUT SUN SPOILER</CTA>
         <About />

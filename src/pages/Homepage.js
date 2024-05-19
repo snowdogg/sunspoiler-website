@@ -9,6 +9,7 @@ import About from "../components/About";
 import Helmet from 'react-helmet';
 import { useEffect, useState } from "react";
 
+
 const Image = styled.img`
   ${'' /* background-image: url("/images/hollywood.png"); */}
   width: 80%;
@@ -153,6 +154,9 @@ const musicPlatforms = [
   }
 ];
 
+
+
+
 function Homepage() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   useEffect(() => {
@@ -204,7 +208,7 @@ function Homepage() {
           </BlockWrapper>
           <BlockWrapper style={{marginBottom: "0px", paddingTop: "20px",paddingLeft: "20px", paddingRight: "20px", paddingBottom: "0px"}}>
           
-        <div style={{textAlign: "center", marginBottom: "0px"}} class="sender-form-field" data-sender-form-id="lwcy5wd5ammw1ad4ftd"></div>
+        <div style={{textAlign: "center", marginBottom: "0px"}} className="sender-form-field" data-sender-form-id="lwcy5wd5ammw1ad4ftd"></div>
 
         </BlockWrapper>
         
@@ -240,7 +244,7 @@ function Homepage() {
               <MusicPlatformList musicPlatforms={socials} simple> </MusicPlatformList>
             </BlockWrapper>
             <BlockWrapper style={{marginBottom: "20px", padding: "20px"}}>
-        <div style={{textAlign: "center", marginBottom: "0px"}} class="sender-form-field" data-sender-form-id="lwcy5wd5ammw1ad4ftd"></div>
+        <div style={{textAlign: "center", marginBottom: "0px"}} className="sender-form-field" data-sender-form-id="lwcy5wd5ammw1ad4ftd"></div>
 
         </BlockWrapper>
             <BlockWrapper>

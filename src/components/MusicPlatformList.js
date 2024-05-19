@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import Helmet from 'react-helmet';
+import ReactGA from 'react-ga4';
 
+
+const ga4Id = 'G-1JBMFDG5Q6'
+
+
+
+const handleLinkClick = (label) => {
+  console.log('clicked ' + label)
+  ReactGA.event({
+    category: "link",
+    action: "click",
+    label: label
+  });
+};
 const Container = styled.div`
     text-align: center;
     background: rgb(22, 22, 22);
@@ -58,6 +72,11 @@ const Button = styled.a`
   }
 `
 const MusicPlatformList = ({ musicPlatforms, simple, featuredIndex }) => {
+  useEffect(() => {
+    ReactGA.initialize(ga4Id);
+  
+  }, []);
+  
   return (
   
     <Container>
@@ -78,7 +97,7 @@ const MusicPlatformList = ({ musicPlatforms, simple, featuredIndex }) => {
       </Helmet>
       {simple ?    
       musicPlatforms.map((platform, index) => (
-        <a style={{padding: "15px"}} href={platform.url} target="_blank" rel="noreferrer" key={index} >
+        <a style={{padding: "15px"}} href={platform.url} target="_blank" rel="noreferrer" key={index} onClick={() => handleLinkClick(platform?.name)} >
         <img className={ index===featuredIndex ? "featured" : ""} width="30px" height="30px" src={platform.icon} alt={platform.name}/>
         </a>
       ))  

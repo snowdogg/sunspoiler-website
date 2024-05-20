@@ -8,14 +8,25 @@ const ga4Id = 'G-1JBMFDG5Q6'
 
 
 
+
 const handleLinkClick = (label) => {
   console.log('clicked ' + label)
+  let value = 25;
+  if (label === "Spotify")
+    value = 100;
+  
   ReactGA.event({
     category: "link",
     action: "click",
-    label: label
+    label: label,
+    value: 100
   });
+
+  console.log(value+" points for Gryffindor!")
+
 };
+
+
 const Container = styled.div`
     text-align: center;
     background: rgb(22, 22, 22);

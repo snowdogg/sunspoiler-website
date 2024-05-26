@@ -16,6 +16,12 @@ const Image = styled.img`
   height: 80%;
 `
 
+const ProfilePic = styled.img`
+  border-radius: 150px;
+  width: 200px;
+  height: 200px;
+`
+
 
 const AlbumArt = styled.img`
   ${'' /* background-image: url("/images/hollywood.png"); */}
@@ -199,9 +205,11 @@ function Homepage() {
       
       {windowWidth <= 768 ?
         <>
-       
+        
           <BlockWrapper style={{marginBottom: "0px"}}>
-            
+            <CenterContainer style={{marginTop: "20px"}}>
+            <ProfilePic src="/images/hair flip.jpg"></ProfilePic>
+            </CenterContainer>
             <CTA>LISTEN</CTA>
             <MusicPlatformList musicPlatforms={musicPlatforms} featuredIndex={0} simple></MusicPlatformList>
 

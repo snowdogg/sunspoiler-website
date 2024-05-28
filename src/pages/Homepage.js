@@ -207,6 +207,7 @@ function Homepage() {
         <>
         
           <BlockWrapper style={{marginBottom: "0px"}}>
+          <CTA style={{fontSize: "25px"}}>SUN SPOILER</CTA>
             <CenterContainer style={{marginTop: "20px"}}>
             <ProfilePic src="/images/hair flip.jpg"></ProfilePic>
             </CenterContainer>
@@ -221,7 +222,7 @@ function Homepage() {
         </BlockWrapper>
         
           <BlockWrapper style={{marginBottom: "20px"}}>
-            
+          
             <CTA>FOLLOW</CTA>
             <MusicPlatformList musicPlatforms={socials} simple> </MusicPlatformList>
           </BlockWrapper>
@@ -236,8 +237,10 @@ function Homepage() {
 
 
 
+        <YouTube videoId={"KkfSueQzp74"} />
         <YouTube videoId={"XRJ62bzlJ-Q"} />
         <YouTube videoId={"nH3mPx0Hm6c"} />
+        
         {/* <YouTube videoId={"m02jaxRKuDs"}/> */}
         {windowWidth > 768 ?
           <>

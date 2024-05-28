@@ -18,8 +18,8 @@ const Image = styled.img`
 
 const ProfilePic = styled.img`
   border-radius: 150px;
-  width: 200px;
-  height: 200px;
+  width: 125px;
+  height: 125px;
 `
 
 
@@ -209,7 +209,9 @@ function Homepage() {
           <BlockWrapper style={{marginBottom: "0px"}}>
           <CTA style={{fontSize: "25px"}}>SUN SPOILER</CTA>
             <CenterContainer style={{marginTop: "20px"}}>
-            <ProfilePic src="/images/hair flip.jpg"></ProfilePic>
+             
+            <ProfilePic src="/images/hair flip 3.png"></ProfilePic>
+            
             </CenterContainer>
             <CTA>LISTEN</CTA>
             <MusicPlatformList musicPlatforms={musicPlatforms} featuredIndex={0} simple></MusicPlatformList>

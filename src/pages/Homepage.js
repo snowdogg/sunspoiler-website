@@ -86,7 +86,7 @@ const CenterContainer = styled.div`
 `;
 
 const MarqueeContainer = styled.div`
-  padding-top: 80px;
+  padding-top: 55px;
   background: rgb(22, 22, 22);
 `;
 
@@ -214,20 +214,35 @@ function Homepage() {
             
             </CenterContainer>
             <CTA>LISTEN</CTA>
+           
             <MusicPlatformList musicPlatforms={musicPlatforms} featuredIndex={0} simple></MusicPlatformList>
-
+          
           </BlockWrapper>
+          <BlockWrapper style={{marginBottom: "5px"}}>
+          <BlockWrapper style={{marginBottom: "20px"}}>
+          
+          <CTA>FOLLOW</CTA>
+          <MusicPlatformList musicPlatforms={socials} simple> </MusicPlatformList>
+        </BlockWrapper>
+            <CTA>BUY</CTA>
+        <CenterContainer>
+          <a style={{color:"white", textDecoration:"none", marginBottom: "5px" }} href="https://square.link/u/DNxAPasl" target="_blank">Dystopia Pop, Vol. 1 On Vinyl</a>
+        </CenterContainer>
+          <CenterContainer>
+         
+          <a style={{color:"white"}} href="https://square.link/u/DNxAPasl" target="_blank">
+          <AlbumArt style={{borderRadius: "45px"}} src="/images/original.jpeg" />
+          </a>
+            </CenterContainer>
+            </BlockWrapper>
+            
           <BlockWrapper style={{marginBottom: "0px", paddingTop: "20px",paddingLeft: "20px", paddingRight: "20px", paddingBottom: "0px"}}>
           
         <div style={{textAlign: "center", marginBottom: "0px"}} className="sender-form-field" data-sender-form-id="lwcy5wd5ammw1ad4ftd"></div>
 
         </BlockWrapper>
         
-          <BlockWrapper style={{marginBottom: "20px"}}>
-          
-            <CTA>FOLLOW</CTA>
-            <MusicPlatformList musicPlatforms={socials} simple> </MusicPlatformList>
-          </BlockWrapper>
+      
          
 
         </>
@@ -256,6 +271,19 @@ function Homepage() {
               <CTA>FOLLOW</CTA>
               <MusicPlatformList musicPlatforms={socials} simple> </MusicPlatformList>
             </BlockWrapper>
+            <BlockWrapper style={{marginBottom: "5px"}}>
+            <CTA>PURCHASE</CTA>
+        <CenterContainer>
+          <a style={{color:"white", textDecoration:"none", marginBottom: "5px" }} href="https://square.link/u/DNxAPasl" target="_blank">Dystopia Pop, Vol. 1 On Vinyl</a>
+        </CenterContainer>
+          <CenterContainer>
+         
+          <a style={{color:"white"}} href="https://square.link/u/DNxAPasl" target="_blank">
+          <AlbumArt style={{borderRadius: "45px"}} src="/images/original2.jpeg" />
+          </a>
+            </CenterContainer>
+            </BlockWrapper>
+            
             <BlockWrapper style={{marginBottom: "20px", padding: "20px"}}>
         <div style={{textAlign: "center", marginBottom: "0px"}} className="sender-form-field" data-sender-form-id="lwcy5wd5ammw1ad4ftd"></div>
 

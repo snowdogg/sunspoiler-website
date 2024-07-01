@@ -227,7 +227,7 @@ function Homepage() {
           <CenterContainer>
          
           <a style={{color:"white"}} href="https://square.link/u/DNxAPasl" target="_blank">
-          <AlbumArt style={{borderRadius: "45px"}} src="/images/original.jpeg" />
+          <AlbumArt style={{borderRadius: "45px"}} src="/images/original.png" />
           </a>
             </CenterContainer>
           <CTA>FOLLOW</CTA>
@@ -279,7 +279,7 @@ function Homepage() {
           <CenterContainer>
          
           <a style={{color:"white"}} href="https://square.link/u/DNxAPasl" target="_blank">
-          <AlbumArt style={{borderRadius: "45px"}} src="/images/original2.jpeg" />
+          <AlbumArt style={{borderRadius: "45px"}} src="/images/original2.png" />
           </a>
             </CenterContainer>
             </BlockWrapper>

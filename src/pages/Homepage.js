@@ -220,11 +220,7 @@ function Homepage() {
           </BlockWrapper>
           <BlockWrapper style={{marginBottom: "5px"}}>
           <BlockWrapper style={{marginBottom: "20px"}}>
-          
-          <CTA>FOLLOW</CTA>
-          <MusicPlatformList musicPlatforms={socials} simple> </MusicPlatformList>
-        </BlockWrapper>
-            <CTA>BUY</CTA>
+          <CTA>BUY</CTA>
         <CenterContainer>
           <a style={{color:"white", textDecoration:"none", marginBottom: "5px" }} href="https://square.link/u/DNxAPasl" target="_blank">Dystopia Pop, Vol. 1 On Vinyl</a>
         </CenterContainer>
@@ -234,6 +230,10 @@ function Homepage() {
           <AlbumArt style={{borderRadius: "45px"}} src="/images/original.jpeg" />
           </a>
             </CenterContainer>
+          <CTA>FOLLOW</CTA>
+          <MusicPlatformList musicPlatforms={socials} simple> </MusicPlatformList>
+        </BlockWrapper>
+            
             </BlockWrapper>
             
           <BlockWrapper style={{marginBottom: "0px", paddingTop: "20px",paddingLeft: "20px", paddingRight: "20px", paddingBottom: "0px"}}>

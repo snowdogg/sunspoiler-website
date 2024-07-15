@@ -11,7 +11,7 @@ const ga4Id = 'G-1JBMFDG5Q6'
 
 const handleLinkClick = (label) => {
   console.log('clicked ' + label)
-  let value = 25;
+  let value = 0;
   if (label === "Spotify")
     value = 100;
   
@@ -19,7 +19,7 @@ const handleLinkClick = (label) => {
     category: "link",
     action: "click",
     label: label,
-    value: 100
+    value
   });
 
   console.log(value+" points for Gryffindor!")

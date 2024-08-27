@@ -182,7 +182,7 @@ function Homepage() {
       <Helmet>
         <meta name="title" property="og:title" content="Sun Spoiler" />
         <script>
-        {`  (function (s, e, n, d, er) {
+          {`  (function (s, e, n, d, er) {
             s['Sender'] = er;
           s[er] = s[er] || function () {
             (s[er].q = s[er].q || []).push(arguments)
@@ -201,94 +201,99 @@ function Homepage() {
       <MarqueeContainer>
         <Marquee content={"Dystopia Pop Vol. 1 Out Now"} />
       </MarqueeContainer>
-     
-      
+
+
       {windowWidth <= 768 ?
         <>
-        
-          <BlockWrapper style={{marginBottom: "0px"}}>
-          <CTA style={{fontSize: "25px"}}>SUN SPOILER</CTA>
-            <CenterContainer style={{marginTop: "20px"}}>
-             
-            <ProfilePic src="/images/hair flip 3.png"></ProfilePic>
-            
+
+          <BlockWrapper style={{ marginBottom: "0px" }}>
+            <CTA style={{ fontSize: "25px" }}>SUN SPOILER</CTA>
+            <CenterContainer style={{ marginTop: "20px" }}>
+
+              <ProfilePic src="/images/hair flip 3.png"></ProfilePic>
+
             </CenterContainer>
             <CTA>LISTEN</CTA>
-           
-            <MusicPlatformList musicPlatforms={musicPlatforms} featuredIndex={0} simple></MusicPlatformList>
-          
-          </BlockWrapper>
-          <BlockWrapper style={{marginBottom: "5px"}}>
-          <BlockWrapper style={{marginBottom: "20px"}}>
-          <CTA>BUY</CTA>
-        <CenterContainer>
-          <a style={{color:"white", textDecoration:"none", marginBottom: "5px" }} href="https://square.link/u/DNxAPasl" target="_blank">Dystopia Pop, Vol. 1 On Vinyl</a>
-        </CenterContainer>
-          <CenterContainer>
-         
-          <a style={{color:"white"}} href="https://square.link/u/DNxAPasl" target="_blank">
-          <AlbumArt style={{borderRadius: "45px"}} src="/images/original.png" />
-          </a>
-            </CenterContainer>
-          <CTA>FOLLOW</CTA>
-          <MusicPlatformList musicPlatforms={socials} simple> </MusicPlatformList>
-        </BlockWrapper>
-            
-            </BlockWrapper>
-            
-          <BlockWrapper style={{marginBottom: "0px", paddingTop: "20px",paddingLeft: "20px", paddingRight: "20px", paddingBottom: "0px"}}>
-          
-        <div style={{textAlign: "center", marginBottom: "0px"}} className="sender-form-field" data-sender-form-id="lwcy5wd5ammw1ad4ftd"></div>
 
-        </BlockWrapper>
-        
-      
-         
+            <MusicPlatformList musicPlatforms={musicPlatforms} featuredIndex={0} simple></MusicPlatformList>
+
+          </BlockWrapper>
+          <BlockWrapper style={{ marginBottom: "5px" }}>
+            <BlockWrapper style={{ marginBottom: "20px" }}>
+              <CTA>BUY</CTA>
+              <CenterContainer>
+                <a style={{ color: "white", textDecoration: "none", marginBottom: "5px" }} href="https://square.link/u/DNxAPasl" target="_blank">Dystopia Pop, Vol. 1 On Vinyl</a>
+              </CenterContainer>
+              <CenterContainer>
+
+                <a style={{ color: "white" }} href="https://square.link/u/DNxAPasl" target="_blank">
+                  <AlbumArt style={{ borderRadius: "45px" }} src="/images/original.png" />
+                </a>
+              </CenterContainer>
+              <CTA>FOLLOW</CTA>
+              <MusicPlatformList musicPlatforms={socials} simple> </MusicPlatformList>
+            </BlockWrapper>
+
+          </BlockWrapper>
+
+          <BlockWrapper style={{ marginBottom: "0px", paddingTop: "20px", paddingLeft: "20px", paddingRight: "20px", paddingBottom: "0px" }}>
+
+            <div style={{ textAlign: "center", marginBottom: "0px" }} className="sender-form-field" data-sender-form-id="lwcy5wd5ammw1ad4ftd"></div>
+
+          </BlockWrapper>
+
+
+
 
         </>
 
         : ""}
-       
+
       <BlockWrapper>
+        {windowWidth > 768 ?
+        <>
+      <CTA>LISTEN</CTA>
+           
+           <MusicPlatformList musicPlatforms={musicPlatforms} featuredIndex={0} simple></MusicPlatformList>
+          
+       
         <CTA>WATCH</CTA>
+        </>
+          : ""
 
+        }
 
-
-        <YouTube videoId={"KkfSueQzp74"} />
         <YouTube videoId={"XRJ62bzlJ-Q"} />
         <YouTube videoId={"nH3mPx0Hm6c"} />
-        <YouTube videoId={"WMyKReB_V8w"}/>
-        
+        <YouTube videoId={"KkfSueQzp74"} />
+        <YouTube videoId={"WMyKReB_V8w"} />
+
         {/* <YouTube videoId={"m02jaxRKuDs"}/> */}
         {windowWidth > 768 ?
           <>
-          
-            <BlockWrapper style={{ marginTop: "50px" }}>
-              <CTA>LISTEN</CTA>
-              <MusicPlatformList musicPlatforms={musicPlatforms} simple></MusicPlatformList>
 
-            </BlockWrapper>
-            <BlockWrapper style={{marginBottom: "0px"}}>
+
+            <BlockWrapper style={{ marginBottom: "0px" }}>
               <CTA>FOLLOW</CTA>
               <MusicPlatformList musicPlatforms={socials} simple> </MusicPlatformList>
             </BlockWrapper>
-            <BlockWrapper style={{marginBottom: "5px"}}>
-            <CTA>PURCHASE</CTA>
-        <CenterContainer>
-          <a style={{color:"white", textDecoration:"none", marginBottom: "5px" }} href="https://square.link/u/DNxAPasl" target="_blank">Dystopia Pop, Vol. 1 On Vinyl</a>
-        </CenterContainer>
-          <CenterContainer>
-         
-          <a style={{color:"white"}} href="https://square.link/u/DNxAPasl" target="_blank">
-          <AlbumArt style={{borderRadius: "45px"}} src="/images/original2.png" />
-          </a>
-            </CenterContainer>
-            </BlockWrapper>
-            
-            <BlockWrapper style={{marginBottom: "20px", padding: "20px"}}>
-        <div style={{textAlign: "center", marginBottom: "0px"}} className="sender-form-field" data-sender-form-id="lwcy5wd5ammw1ad4ftd"></div>
+            <BlockWrapper style={{ marginBottom: "5px" }}>
+              <CTA>PURCHASE</CTA>
+              <CenterContainer>
+                <a style={{ color: "white", textDecoration: "none", marginBottom: "5px" }} href="https://square.link/u/DNxAPasl" target="_blank">Dystopia Pop, Vol. 1 On Vinyl</a>
+              </CenterContainer>
+              <CenterContainer>
 
-        </BlockWrapper>
+                <a style={{ color: "white" }} href="https://square.link/u/DNxAPasl" target="_blank">
+                  <AlbumArt style={{ borderRadius: "45px" }} src="/images/original2.png" />
+                </a>
+              </CenterContainer>
+            </BlockWrapper>
+
+            <BlockWrapper style={{ marginBottom: "20px", padding: "20px" }}>
+              <div style={{ textAlign: "center", marginBottom: "0px" }} className="sender-form-field" data-sender-form-id="lwcy5wd5ammw1ad4ftd"></div>
+
+            </BlockWrapper>
             <BlockWrapper>
               <CenterContainer>
                 <a href="https://open.spotify.com/album/7Deo3uv2sqxH2jAgdUjdN0" target="_blank" >
@@ -301,12 +306,12 @@ function Homepage() {
 
           </>
 
-          :  <BlockWrapper> <CenterContainer>
-          <a href="https://open.spotify.com/album/7Deo3uv2sqxH2jAgdUjdN0" target="_blank" >
-            <AlbumArt src="/images/dystopiaPop.png" />
-          </a>
-        </CenterContainer>
-        </BlockWrapper>}
+          : <BlockWrapper> <CenterContainer>
+            <a href="https://open.spotify.com/album/7Deo3uv2sqxH2jAgdUjdN0" target="_blank" >
+              <AlbumArt src="/images/dystopiaPop.png" />
+            </a>
+          </CenterContainer>
+          </BlockWrapper>}
         {/* <div style={{ width: "100%", display: "flex" }}>
           <video style={{ maxWidth: "400px", margin: "0 auto" }} autoPlay loop muted controls>
             <source src="/images/dystopiaPopTeaser.mp4" type="video/mp4"></source>

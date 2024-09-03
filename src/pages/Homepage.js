@@ -181,6 +181,7 @@ function Homepage() {
     <Container>
       <Helmet>
         <meta name="title" property="og:title" content="Sun Spoiler" />
+        <meta name="facebook-domain-verification" content="ord6i4by7rszp55cvoiobmh5q2dut6" />
         <script>
           {`  (function (s, e, n, d, er) {
             s['Sender'] = er;

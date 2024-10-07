@@ -17,8 +17,7 @@ function App() {
     <>
     <Helmet>
     <base href="/" />
-    <meta property="og:image" content="https://www.sunspoiler.com/images/mozscreenshot.jpg" />
-
+   
     <link rel="icon" type="image/png" sizes="64x64" href="/images/icon64.png" />
 
 

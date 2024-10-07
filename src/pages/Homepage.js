@@ -181,6 +181,8 @@ function Homepage() {
     <Container>
       <Helmet>
         <meta name="title" property="og:title" content="Sun Spoiler" />
+        <meta name="image" property="og:image" content="https://www.sunspoiler.com/images/mozscreenshot.jpg" />
+        <meta name="description" property="og:description" content="Sun Spoiler is a music project by artist and producer Andreas Emmanuel." />
         <meta name="facebook-domain-verification" content="ord6i4by7rszp55cvoiobmh5q2dut6" />
         <script>
           {`  (function (s, e, n, d, er) {

@@ -204,7 +204,12 @@ function Homepage() {
       <MarqueeContainer>
         <Marquee content={"Dystopia Pop Vol. 1 Out Now"} />
       </MarqueeContainer>
-
+      
+            
+              <CenterContainer>
+             <a style={{textDecoration:"none"}} href={'https://surge-event.ticketleap.com/sun-spoiler-performing-live-viper-room-friday-october-11th/'}><CTA style={{color: "lightgreen"}}>VIPER ROOM TICKETS</CTA></a> 
+              </CenterContainer>
+       
 
       {windowWidth <= 768 ?
         <>

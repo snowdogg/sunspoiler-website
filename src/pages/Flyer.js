@@ -72,15 +72,15 @@ export default function Flyer() {
       icon: "/images/soundcloud.svg"
     }
   ];
-  
+  console.log('content')
   // return the page when found
   return (
     <>
       {/* Render the Builder page */}
       <Helmet>
-      <meta name="title" property="og:title" content={content?.title} />
-      <meta name="description" property="og:description" content={content?.description} />
-      <meta name="image" property="og:image" content={content?.image} />
+      <meta name="title" property="og:title" content={content?.data?.title} />
+      <meta name="description" property="og:description" content={content?.data?.description} />
+      <meta name="image" property="og:image" content={content?.data?.image} />
       <meta name="facebook-domain-verification" content="ord6i4by7rszp55cvoiobmh5q2dut6" />
       </Helmet>
       <div style={{height: '100vh', backgroundColor: "black"}}>

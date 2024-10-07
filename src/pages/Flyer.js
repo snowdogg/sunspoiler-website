@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { BuilderComponent, builder, useIsPreviewing } from "@builder.io/react";
 import MusicPlatformList from "../components/MusicPlatformList";
+import Helmet from 'react-helmet';
 
 // Put your API key here
 builder.init('70e7c856abb3400aaf6f40ad66f992ba');
@@ -76,9 +77,15 @@ export default function Flyer() {
   return (
     <>
       {/* Render the Builder page */}
+      <Helmet>
+      <meta name="title" property="og:title" content={content?.title} />
+      <meta name="description" property="og:description" content={content?.description} />
+      <meta name="image" property="og:image" content={content?.image} />
+      <meta name="facebook-domain-verification" content="ord6i4by7rszp55cvoiobmh5q2dut6" />
+      </Helmet>
       <div style={{height: '100vh', backgroundColor: "black"}}>
         <MusicPlatformList  musicPlatforms={musicPlatforms} featuredIndex={0} simple />
-      <BuilderComponent model="flyer" content={content} />
+      <BuilderComponent model="flyer" content={content} />  
       </div>
     </>
   );

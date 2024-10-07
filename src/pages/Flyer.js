@@ -78,6 +78,7 @@ export default function Flyer() {
     <>
       {/* Render the Builder page */}
       <Helmet>
+        <title> {content?.data?.title} </title>
       <meta name="title" property="og:title" content={content?.data?.title} />
       <meta name="description" property="og:description" content={content?.data?.description} />
       <meta name="image" property="og:image" content={content?.data?.image} />

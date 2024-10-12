@@ -208,7 +208,7 @@ function Homepage() {
       
             
               <CenterContainer>
-             <a style={{textDecoration:"none"}} href={'https://surge-event.ticketleap.com/sun-spoiler-performing-live-viper-room-friday-october-11th/'}><CTA style={{color: "lightgreen"}}>VIPER ROOM TICKETS</CTA></a> 
+<CTA style={{fontSize: "25px", color: "lightgreen"}}>NEXT SHOW: DADDY DIAMOND'S IN HOLLYWOOD OCT 18</CTA>
               </CenterContainer>
        
 

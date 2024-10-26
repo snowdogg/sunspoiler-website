@@ -208,7 +208,7 @@ function Homepage() {
       
             
               <CenterContainer>
-<CTA style={{fontSize: "25px", color: "lightgreen"}}>NEXT SHOW: DADDY DIAMOND'S IN HOLLYWOOD OCT 18</CTA>
+<CTA style={{fontSize: "25px", color: "lightgreen"}}>HOUSE PARTY IN THE VALLEY OCT 31 <a href="mailto:info@sunspoiler.com">CONTACT FOR ADDRESS</a></CTA>
               </CenterContainer>
        
 

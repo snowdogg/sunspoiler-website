@@ -207,10 +207,10 @@ function Homepage() {
       </MarqueeContainer>
       
             
-              <CenterContainer>
+              {/* <CenterContainer>
 <CTA style={{fontSize: "25px", color: "lightgreen"}}>HOUSE PARTY IN THE VALLEY OCT 31 <a href="mailto:info@sunspoiler.com">CONTACT FOR ADDRESS</a></CTA>
               </CenterContainer>
-       
+        */}
 
       {windowWidth <= 768 ?
         <>

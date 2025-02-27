@@ -55,7 +55,7 @@ const CenterContainer2 = styled.div`
 
 const Image = styled.img`
   ${'' /* background-image: url("/images/hollywood.png"); */}
-  max-width: 40%;
+  max-width: 80%;
   @media (max-width: 768px) { 
     max-width: 80%;
   }
@@ -66,8 +66,13 @@ const About = () => {
   return (
     <>
       <CenterContainer>
-        <Image src="/images/_DSC6988.jpg" />
+        <Image src="/images/Andreas2049web.jpg"/>
+   
+        
       </CenterContainer>
+      <CenterContainer2>
+      <span style={{color:'grey', fontSize: '16px', textWeight: 100, opacity: .5}}>photo by Maximillian Xavier 2025</span>
+      </CenterContainer2>
       <br></br>      <br></br>
       <CenterContainer2>
         <p>

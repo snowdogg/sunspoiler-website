@@ -78,7 +78,7 @@ const About = () => {
         <p>
           <b>Sun Spoiler</b> is the new project from Hollywood, CA
           songwriter/producer/guitarist Andreas Emmanuel. The six track EP Dystopia Pop Vol. 1
-          is out now digitally and is coming to vinyl late this Summer.
+          is out now on digital and vinyl.
           
           </p>
         

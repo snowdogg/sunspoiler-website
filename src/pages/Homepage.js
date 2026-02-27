@@ -20,6 +20,8 @@ const ProfilePic = styled.img`
   border-radius: 150px;
   width: 125px;
   height: 125px;
+  object-fit: cover;
+  object-position: right;
 `
 
 
@@ -203,8 +205,9 @@ function Homepage() {
       </Helmet>
       <Navigation />
       <MarqueeContainer>
-        <Marquee content={"Dystopia Pop Vol. 1 Out Now"} />
+        <Marquee content={"She's Crawling Up The Wall Again"} />
       </MarqueeContainer>
+   
       
             
               {/* <CenterContainer>
@@ -219,7 +222,7 @@ function Homepage() {
             <CTA style={{ fontSize: "25px" }}>SUN SPOILER</CTA>
             <CenterContainer style={{ marginTop: "20px" }}>
 
-              <ProfilePic src="/images/hair flip 3.png"></ProfilePic>
+              <ProfilePic src="https://cdn.builder.io/api/v1/image/assets%2F66f17a71b4ad42e79a06c6dd331b292f%2F00bcf4981ddc4381aa9caf00ef16fbe2?format=webp&width=800&height=1200"></ProfilePic>
 
             </CenterContainer>
             <CTA>LISTEN</CTA>

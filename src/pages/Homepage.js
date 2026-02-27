@@ -102,6 +102,58 @@ const BlockWrapper = styled.div`
   margin-bottom: 50px;
 `
 
+const SongCard = styled.div`
+  background: rgb(30, 30, 30);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 0 auto 30px;
+  max-width: 480px;
+  text-align: center;
+`
+
+const SongTitle = styled.h2`
+  color: white;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin: 0 0 4px;
+`
+
+const SongArtist = styled.p`
+  color: rgba(255,255,255,0.5);
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 16px;
+`
+
+const PlatformLinks = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+`
+
+const PlatformLink = styled.a`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: rgba(255,255,255,0.65);
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: opacity 0.2s;
+  &:hover {
+    opacity: 0.7;
+  }
+`
+
 const CTA = styled.h1`
   color: white;
   font-family: "Archivo Black", sans-serif;
@@ -207,6 +259,32 @@ function Homepage() {
       <MarqueeContainer>
         <Marquee content={"She's Crawling Up The Wall Again"} />
       </MarqueeContainer>
+
+      <SongCard style={{ marginTop: "14px" }}>
+        <SongTitle>BAD GIRL</SongTitle>
+        <SongArtist>Sun Spoiler</SongArtist>
+        <iframe
+          style={{ borderRadius: "8px", border: "none", width: "100%", height: "152px" }}
+          src="https://open.spotify.com/embed/album/08zY40CVz630i5cNUpQnsu?utm_source=generator&theme=0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+          title="Sun Spoiler - Bad Girl on Spotify"
+        />
+        <PlatformLinks>
+          <PlatformLink href="https://open.spotify.com/album/08zY40CVz630i5cNUpQnsu" target="_blank" rel="noreferrer">
+            <img src="/images/spotify.svg" width="24" height="24" alt="Spotify" />
+            Spotify
+          </PlatformLink>
+          <PlatformLink href="https://music.apple.com/us/album/bad-girl-single/1877525137" target="_blank" rel="noreferrer">
+            <img src="/images/apple.svg" width="24" height="24" alt="Apple Music" />
+            Apple Music
+          </PlatformLink>
+          <PlatformLink href="https://music.youtube.com/watch?v=3f3-EBDFeFc&si=TXz2EFEBiAGv1kSJ" target="_blank" rel="noreferrer">
+            <img src="/images/youtube.svg" width="24" height="24" alt="YouTube Music" />
+            YouTube
+          </PlatformLink>
+        </PlatformLinks>
+      </SongCard>
    
       
             

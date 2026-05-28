@@ -261,81 +261,13 @@ function Homepage() {
       </MarqueeContainer>
 
       <SongCard style={{ marginTop: "14px" }}>
-        <SongTitle>BAD GIRL</SongTitle>
-        <SongArtist>Sun Spoiler</SongArtist>
         <iframe
-          style={{ borderRadius: "8px", border: "none", width: "100%", height: "152px" }}
-          src="https://open.spotify.com/embed/album/08zY40CVz630i5cNUpQnsu?utm_source=generator&theme=0"
+          style={{ borderRadius: "8px", border: "none", width: "100%", height: "380px" }}
+          src="https://open.spotify.com/embed/playlist/5T8F6EwlMX3qkAmwFOJ0x4?utm_source=generator&theme=0"
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
-          title="Sun Spoiler - Bad Girl on Spotify"
+          title="Sun Spoiler Playlist on Spotify"
         />
-        <PlatformLinks>
-          <PlatformLink href="https://open.spotify.com/album/08zY40CVz630i5cNUpQnsu" target="_blank" rel="noreferrer">
-            <img src="/images/spotify.svg" width="24" height="24" alt="Spotify" />
-            Spotify
-          </PlatformLink>
-          <PlatformLink href="https://music.apple.com/us/album/bad-girl-single/1877525137" target="_blank" rel="noreferrer">
-            <img src="/images/apple.svg" width="24" height="24" alt="Apple Music" />
-            Apple Music
-          </PlatformLink>
-          <PlatformLink href="https://music.youtube.com/watch?v=3f3-EBDFeFc&si=TXz2EFEBiAGv1kSJ" target="_blank" rel="noreferrer">
-            <img src="/images/youtube.svg" width="24" height="24" alt="YouTube Music" />
-            YouTube
-          </PlatformLink>
-        </PlatformLinks>
-      </SongCard>
-
-      <SongCard>
-        <SongTitle>NEED TO KNOW</SongTitle>
-        <SongArtist>Sun Spoiler</SongArtist>
-        <iframe
-          style={{ borderRadius: "8px", border: "none", width: "100%", height: "152px" }}
-          src="https://open.spotify.com/embed/track/3uKxlhKQKjbhVMD3K8J5tl?utm_source=generator&theme=0"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-          title="Sun Spoiler - Need to Know on Spotify"
-        />
-        <PlatformLinks>
-          <PlatformLink href="https://open.spotify.com/track/3uKxlhKQKjbhVMD3K8J5tl" target="_blank" rel="noreferrer">
-            <img src="/images/spotify.svg" width="24" height="24" alt="Spotify" />
-            Spotify
-          </PlatformLink>
-          <PlatformLink href="https://music.apple.com/us/song/need-to-know/1738888031" target="_blank" rel="noreferrer">
-            <img src="/images/apple.svg" width="24" height="24" alt="Apple Music" />
-            Apple Music
-          </PlatformLink>
-          <PlatformLink href="https://music.youtube.com/watch?v=KJ7x3sTj8JQ" target="_blank" rel="noreferrer">
-            <img src="/images/youtube.svg" width="24" height="24" alt="YouTube Music" />
-            YouTube
-          </PlatformLink>
-        </PlatformLinks>
-      </SongCard>
-
-      <SongCard>
-        <SongTitle>GLOAT</SongTitle>
-        <SongArtist>Sun Spoiler ft Dom</SongArtist>
-        <iframe
-          style={{ borderRadius: "8px", border: "none", width: "100%", height: "152px" }}
-          src="https://open.spotify.com/embed/track/5yGqVXsxSMWdKRgLDQVKhk?utm_source=generator&theme=0"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-          title="Sun Spoiler ft Dom - Gloat on Spotify"
-        />
-        <PlatformLinks>
-          <PlatformLink href="https://open.spotify.com/track/5yGqVXsxSMWdKRgLDQVKhk" target="_blank" rel="noreferrer">
-            <img src="/images/spotify.svg" width="24" height="24" alt="Spotify" />
-            Spotify
-          </PlatformLink>
-          <PlatformLink href="https://music.apple.com/us/song/gloat-feat-dom/1738888032" target="_blank" rel="noreferrer">
-            <img src="/images/apple.svg" width="24" height="24" alt="Apple Music" />
-            Apple Music
-          </PlatformLink>
-          <PlatformLink href="https://music.youtube.com/watch?v=4fFKkZqLh-c" target="_blank" rel="noreferrer">
-            <img src="/images/youtube.svg" width="24" height="24" alt="YouTube Music" />
-            YouTube
-          </PlatformLink>
-        </PlatformLinks>
       </SongCard>
    
       

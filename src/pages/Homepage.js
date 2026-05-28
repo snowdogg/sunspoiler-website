@@ -280,6 +280,16 @@ function Homepage() {
 
             <MusicPlatformList musicPlatforms={musicPlatforms} featuredIndex={0} simple></MusicPlatformList>
 
+            <SongCard style={{ marginTop: "30px" }}>
+              <iframe
+                style={{ borderRadius: "8px", border: "none", width: "100%", height: "380px" }}
+                src="https://open.spotify.com/embed/playlist/5T8F6EwlMX3qkAmwFOJ0x4?utm_source=generator&theme=0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+                title="Sun Spoiler Playlist on Spotify"
+              />
+            </SongCard>
+
           </BlockWrapper>
           <BlockWrapper style={{ marginBottom: "5px" }}>
             <BlockWrapper style={{ marginBottom: "20px" }}>

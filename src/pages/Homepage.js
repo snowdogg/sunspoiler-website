@@ -260,18 +260,7 @@ function Homepage() {
         <Marquee content={"She's Crawling Up The Wall Again"} />
       </MarqueeContainer>
 
-      <SongCard style={{ marginTop: "14px" }}>
-        <iframe
-          style={{ borderRadius: "8px", border: "none", width: "100%", height: "380px" }}
-          src="https://open.spotify.com/embed/playlist/5T8F6EwlMX3qkAmwFOJ0x4?utm_source=generator&theme=0"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-          title="Sun Spoiler Playlist on Spotify"
-        />
-      </SongCard>
-   
-      
-            
+
               {/* <CenterContainer>
 <CTA style={{fontSize: "25px", color: "lightgreen"}}>HOUSE PARTY IN THE VALLEY OCT 31 <a href="mailto:info@sunspoiler.com">CONTACT FOR ADDRESS</a></CTA>
               </CenterContainer>
@@ -327,10 +316,19 @@ function Homepage() {
         {windowWidth > 768 ?
         <>
       <CTA>LISTEN</CTA>
-           
+
            <MusicPlatformList musicPlatforms={musicPlatforms} featuredIndex={0} simple></MusicPlatformList>
-          
-       
+
+           <SongCard style={{ marginTop: "30px" }}>
+             <iframe
+               style={{ borderRadius: "8px", border: "none", width: "100%", height: "380px" }}
+               src="https://open.spotify.com/embed/playlist/5T8F6EwlMX3qkAmwFOJ0x4?utm_source=generator&theme=0"
+               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+               loading="lazy"
+               title="Sun Spoiler Playlist on Spotify"
+             />
+           </SongCard>
+
         <CTA>WATCH</CTA>
         </>
           : ""

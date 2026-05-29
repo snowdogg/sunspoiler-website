@@ -71,7 +71,7 @@ const About = () => {
 
       </CenterContainer>
       <CenterContainer2>
-      <span style={{color:'grey', fontSize: '16px', textWeight: 100, opacity: .5}}>photo by Maximillian Xavier 2025</span>
+      <span style={{color:'grey', fontSize: '16px', textWeight: 100, opacity: .5}}>photo by Maximillian Xavier 2024</span>
       </CenterContainer2>
       <br></br>      <br></br>
       <CenterContainer2>

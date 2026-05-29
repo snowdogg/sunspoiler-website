@@ -260,34 +260,7 @@ function Homepage() {
         <Marquee content={"She's Crawling Up The Wall Again"} />
       </MarqueeContainer>
 
-      <SongCard style={{ marginTop: "14px" }}>
-        <SongTitle>BAD GIRL</SongTitle>
-        <SongArtist>Sun Spoiler</SongArtist>
-        <iframe
-          style={{ borderRadius: "8px", border: "none", width: "100%", height: "152px" }}
-          src="https://open.spotify.com/embed/album/08zY40CVz630i5cNUpQnsu?utm_source=generator&theme=0"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-          title="Sun Spoiler - Bad Girl on Spotify"
-        />
-        <PlatformLinks>
-          <PlatformLink href="https://open.spotify.com/album/08zY40CVz630i5cNUpQnsu" target="_blank" rel="noreferrer">
-            <img src="/images/spotify.svg" width="24" height="24" alt="Spotify" />
-            Spotify
-          </PlatformLink>
-          <PlatformLink href="https://music.apple.com/us/album/bad-girl-single/1877525137" target="_blank" rel="noreferrer">
-            <img src="/images/apple.svg" width="24" height="24" alt="Apple Music" />
-            Apple Music
-          </PlatformLink>
-          <PlatformLink href="https://music.youtube.com/watch?v=3f3-EBDFeFc&si=TXz2EFEBiAGv1kSJ" target="_blank" rel="noreferrer">
-            <img src="/images/youtube.svg" width="24" height="24" alt="YouTube Music" />
-            YouTube
-          </PlatformLink>
-        </PlatformLinks>
-      </SongCard>
-   
-      
-            
+
               {/* <CenterContainer>
 <CTA style={{fontSize: "25px", color: "lightgreen"}}>HOUSE PARTY IN THE VALLEY OCT 31 <a href="mailto:info@sunspoiler.com">CONTACT FOR ADDRESS</a></CTA>
               </CenterContainer>
@@ -306,6 +279,16 @@ function Homepage() {
             <CTA>LISTEN</CTA>
 
             <MusicPlatformList musicPlatforms={musicPlatforms} featuredIndex={0} simple></MusicPlatformList>
+
+            <SongCard style={{ marginTop: "30px" }}>
+              <iframe
+                style={{ borderRadius: "8px", border: "none", width: "100%", height: "380px" }}
+                src="https://open.spotify.com/embed/playlist/5T8F6EwlMX3qkAmwFOJ0x4?utm_source=generator&theme=0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+                title="Sun Spoiler Playlist on Spotify"
+              />
+            </SongCard>
 
           </BlockWrapper>
           <BlockWrapper style={{ marginBottom: "5px" }}>
@@ -343,16 +326,26 @@ function Homepage() {
         {windowWidth > 768 ?
         <>
       <CTA>LISTEN</CTA>
-           
+
            <MusicPlatformList musicPlatforms={musicPlatforms} featuredIndex={0} simple></MusicPlatformList>
-          
-       
+
+           <SongCard style={{ marginTop: "30px" }}>
+             <iframe
+               style={{ borderRadius: "8px", border: "none", width: "100%", height: "380px" }}
+               src="https://open.spotify.com/embed/playlist/5T8F6EwlMX3qkAmwFOJ0x4?utm_source=generator&theme=0"
+               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+               loading="lazy"
+               title="Sun Spoiler Playlist on Spotify"
+             />
+           </SongCard>
+
         <CTA>WATCH</CTA>
         </>
           : ""
 
         }
 
+        <YouTube videoId={"OcwtIsDBoHE"} />
         <YouTube videoId={"XRJ62bzlJ-Q"} />
         <YouTube videoId={"nH3mPx0Hm6c"} />
         <YouTube videoId={"KkfSueQzp74"} />
@@ -414,7 +407,7 @@ function Homepage() {
         <About />
       </BlockWrapper>
       <Footer>
-        Copyright © 2024 Sun Spoiler - All Rights Reserved. Contact
+        Copyright © 2026 Sun Spoiler - All Rights Reserved. Contact
         info@sunspoiler.com for inquiries.
       </Footer>
 

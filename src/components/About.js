@@ -66,12 +66,12 @@ const About = () => {
   return (
     <>
       <CenterContainer>
-        <Image src="/images/Andreas2049web.jpg"/>
-   
-        
+        <Image src="https://cdn.builder.io/api/v1/image/assets%2Fac2c10e692d0415cbd258d94bd32f6d1%2Fbc215a0d1e3c44499a854ed15b819e91?format=webp&width=800&height=1200"/>
+
+
       </CenterContainer>
       <CenterContainer2>
-      <span style={{color:'grey', fontSize: '16px', textWeight: 100, opacity: .5}}>photo by Maximillian Xavier 2025</span>
+      <span style={{color:'grey', fontSize: '16px', textWeight: 100, opacity: .5}}>photo by Maximillian Xavier 2024</span>
       </CenterContainer2>
       <br></br>      <br></br>
       <CenterContainer2>

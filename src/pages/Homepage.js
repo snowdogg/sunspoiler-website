@@ -154,6 +154,27 @@ const PlatformLink = styled.a`
   }
 `
 
+const PreSaveLink = styled.a`
+  display: block;
+  color: white;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  margin: 20px auto;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+`;
+
 const CTA = styled.h1`
   color: white;
   font-family: "Archivo Black", sans-serif;
@@ -276,6 +297,7 @@ function Homepage() {
               <ProfilePic src="https://cdn.builder.io/api/v1/image/assets%2F66f17a71b4ad42e79a06c6dd331b292f%2F00bcf4981ddc4381aa9caf00ef16fbe2?format=webp&width=800&height=1200"></ProfilePic>
 
             </CenterContainer>
+            <PreSaveLink href="https://distrokid.com/hyperfollow/sunspoiler/to-live-and-die-in-shoegaze?ref=release" target="_blank">Pre-Save To Live And Die In Shoegaze</PreSaveLink>
             <CTA>LISTEN</CTA>
 
             <MusicPlatformList musicPlatforms={musicPlatforms} featuredIndex={0} simple></MusicPlatformList>
@@ -328,6 +350,8 @@ function Homepage() {
       <CTA>LISTEN</CTA>
 
            <MusicPlatformList musicPlatforms={musicPlatforms} featuredIndex={0} simple></MusicPlatformList>
+
+           <PreSaveLink href="https://distrokid.com/hyperfollow/sunspoiler/to-live-and-die-in-shoegaze?ref=release" target="_blank">Pre-Save To Live And Die In Shoegaze</PreSaveLink>
 
            <SongCard style={{ marginTop: "30px" }}>
              <iframe

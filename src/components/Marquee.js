@@ -12,17 +12,22 @@ const MarqueeContainer = styled.div`
 
 const marqueeAnimation = keyframes`
   0% {
-    transform: translateX(100%);
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
+`;
+
+const MarqueeTrack = styled.div`
+  display: inline-flex;
+  width: max-content;
+  animation: ${marqueeAnimation} 15s linear infinite; /* Adjust animation duration for slower pace */
 `;
 
 const MarqueeText = styled.span`
   display: inline-block;
   padding-right: 10%; /* Adjust spacing between repeated text */
-  animation: ${marqueeAnimation} 15s linear infinite; /* Adjust animation duration for slower pace */
   -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-font-smoothing: antialiased;
@@ -43,17 +48,21 @@ const MarqueeText = styled.span`
 `;
 
 const Marquee = ({ content }) => {
+  const phrases = Array.isArray(content) ? content : [content];
   return (
     <MarqueeContainer>
-      <MarqueeText>
-        {content}
-      </MarqueeText>
-      <MarqueeText>
-        {content}
-      </MarqueeText>
-      <MarqueeText>
-        {content}
-      </MarqueeText>
+      <MarqueeTrack>
+        {phrases.map((phrase, index) => (
+          <MarqueeText key={index}>
+            {phrase}
+          </MarqueeText>
+        ))}
+        {phrases.map((phrase, index) => (
+          <MarqueeText key={`dup-${index}`}>
+            {phrase}
+          </MarqueeText>
+        ))}
+      </MarqueeTrack>
     </MarqueeContainer>
   );
 };

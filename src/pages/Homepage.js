@@ -278,7 +278,7 @@ function Homepage() {
       </Helmet>
       <Navigation />
       <MarqueeContainer>
-        <Marquee content={"She's Crawling Up The Wall Again"} />
+        <Marquee content={["LOVEBOMBED", "BREADCRUMBED", "SHADOWBANNED", "GASLIT", "GHOSTED"]} />
       </MarqueeContainer>
 
 
@@ -294,10 +294,10 @@ function Homepage() {
             <CTA style={{ fontSize: "25px" }}>SUN SPOILER</CTA>
             <CenterContainer style={{ marginTop: "20px" }}>
 
-              <ProfilePic src="https://cdn.builder.io/api/v1/image/assets%2F66f17a71b4ad42e79a06c6dd331b292f%2F00bcf4981ddc4381aa9caf00ef16fbe2?format=webp&width=800&height=1200"></ProfilePic>
+              <ProfilePic src="/images/reek.webp"></ProfilePic>
 
             </CenterContainer>
-            <PreSaveLink href="https://distrokid.com/hyperfollow/sunspoiler/to-live-and-die-in-shoegaze?ref=release" target="_blank">Pre-Save To Live And Die In Shoegaze</PreSaveLink>
+            <PreSaveLink href="https://open.spotify.com/album/6vV10S5Lfq8KBmmilr8M3u" target="_blank">REEK</PreSaveLink>
             <CTA>LISTEN</CTA>
 
             <MusicPlatformList musicPlatforms={musicPlatforms} featuredIndex={0} simple></MusicPlatformList>
@@ -351,7 +351,7 @@ function Homepage() {
 
            <MusicPlatformList musicPlatforms={musicPlatforms} featuredIndex={0} simple></MusicPlatformList>
 
-           <PreSaveLink href="https://distrokid.com/hyperfollow/sunspoiler/to-live-and-die-in-shoegaze?ref=release" target="_blank">Pre-Save To Live And Die In Shoegaze</PreSaveLink>
+           <PreSaveLink href="https://open.spotify.com/album/6vV10S5Lfq8KBmmilr8M3u" target="_blank">REEK</PreSaveLink>
 
            <SongCard style={{ marginTop: "30px" }}>
              <iframe

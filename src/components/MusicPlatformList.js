@@ -14,13 +14,17 @@ const handleLinkClick = (label) => {
   let value = 0;
   if (label === "Spotify")
     value = 100;
-  
+
   ReactGA.event({
     category: "link",
     action: "click",
     label: label,
     value
   });
+
+  if (label === "Spotify" && typeof window.fbq === "function") {
+    window.fbq('trackCustom', 'SpotifyClick');
+  }
 
   console.log(value+" points for Gryffindor!")
 

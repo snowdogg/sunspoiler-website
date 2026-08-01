@@ -154,27 +154,6 @@ const PlatformLink = styled.a`
   }
 `
 
-const PreSaveLink = styled.a`
-  display: block;
-  color: white;
-  font-family: "Archivo Black", sans-serif;
-  font-weight: 400;
-  text-align: center;
-  font-size: 28px;
-  letter-spacing: 2px;
-  text-decoration: underline;
-  margin: 20px auto;
-  transition: opacity 0.2s;
-
-  &:hover {
-    opacity: 0.7;
-  }
-
-  @media (max-width: 768px) {
-    font-size: 20px;
-  }
-`;
-
 const CTA = styled.h1`
   color: white;
   font-family: "Archivo Black", sans-serif;
@@ -297,7 +276,6 @@ function Homepage() {
               <ProfilePic src="/images/reek.webp"></ProfilePic>
 
             </CenterContainer>
-            <PreSaveLink href="https://open.spotify.com/album/6vV10S5Lfq8KBmmilr8M3u" target="_blank">REEK</PreSaveLink>
             <CTA>LISTEN</CTA>
 
             <MusicPlatformList musicPlatforms={musicPlatforms} featuredIndex={0} simple></MusicPlatformList>
@@ -350,8 +328,6 @@ function Homepage() {
       <CTA>LISTEN</CTA>
 
            <MusicPlatformList musicPlatforms={musicPlatforms} featuredIndex={0} simple></MusicPlatformList>
-
-           <PreSaveLink href="https://open.spotify.com/album/6vV10S5Lfq8KBmmilr8M3u" target="_blank">REEK</PreSaveLink>
 
            <SongCard style={{ marginTop: "30px" }}>
              <iframe

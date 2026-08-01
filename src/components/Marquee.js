@@ -20,13 +20,14 @@ const marqueeAnimation = keyframes`
 `;
 
 const MarqueeTrack = styled.div`
-  display: inline-flex;
+  display: flex;
   width: max-content;
   animation: ${marqueeAnimation} 15s linear infinite; /* Adjust animation duration for slower pace */
 `;
 
 const MarqueeText = styled.span`
   display: inline-block;
+  flex-shrink: 0;
   padding-right: 10%; /* Adjust spacing between repeated text */
   -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0,0,0,0);

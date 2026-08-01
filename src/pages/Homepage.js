@@ -2,7 +2,6 @@
 import "../App.css";
 import styled from "styled-components";
 import Navigation from "../components/Navigation";
-import Marquee from "../components/Marquee";
 import YouTube from "../components/Youtube";
 import MusicPlatformList from "../components/MusicPlatformList";
 import About from "../components/About";
@@ -41,6 +40,10 @@ const Container = styled.div`
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
+
+  @media (min-width: 769px) {
+    padding-top: 60px;
+  }
 `;
 
 
@@ -85,11 +88,6 @@ const CenterContainer = styled.div`
   color: white;
   margin: 0 10% 0 10%;
   text-align: center;
-`;
-
-const MarqueeContainer = styled.div`
-  padding-top: 55px;
-  background: rgb(22, 22, 22);
 `;
 
 const Footer = styled.div`
@@ -256,9 +254,6 @@ function Homepage() {
         </script>
       </Helmet>
       <Navigation />
-      <MarqueeContainer>
-        <Marquee content={["LOVEBOMBED", "BREADCRUMBED", "SHADOWBANNED", "GASLIT", "GHOSTED"]} />
-      </MarqueeContainer>
 
 
               {/* <CenterContainer>
@@ -269,8 +264,7 @@ function Homepage() {
       {windowWidth <= 768 ?
         <>
 
-          <BlockWrapper style={{ marginBottom: "0px" }}>
-            <CTA style={{ fontSize: "25px" }}>SUN SPOILER</CTA>
+          <BlockWrapper style={{ marginBottom: "0px", paddingTop: "60px" }}>
             <CenterContainer style={{ marginTop: "20px" }}>
 
               <ProfilePic src="/images/reek.webp"></ProfilePic>
@@ -325,6 +319,7 @@ function Homepage() {
       <BlockWrapper>
         {windowWidth > 768 ?
         <>
+      <CTA>SUN SPOILER</CTA>
       <CTA>LISTEN</CTA>
 
            <MusicPlatformList musicPlatforms={musicPlatforms} featuredIndex={0} simple></MusicPlatformList>

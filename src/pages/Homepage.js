@@ -319,7 +319,6 @@ function Homepage() {
       <BlockWrapper>
         {windowWidth > 768 ?
         <>
-      <CTA>SUN SPOILER</CTA>
       <CTA>LISTEN</CTA>
 
            <MusicPlatformList musicPlatforms={musicPlatforms} featuredIndex={0} simple></MusicPlatformList>

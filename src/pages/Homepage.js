@@ -192,22 +192,22 @@ const musicPlatforms = [
   },
   {
     name: "Apple Music",
-    url: "https://music.apple.com/us/album/moment-of-zen-single/1691095736",
+    url: "https://music.apple.com/us/album/reek-single/6793431782",
     icon: "/images/apple.svg",
   },
   {
     name: "Youtube Music",
-    url: "https://music.youtube.com/playlist?list=OLAK5uy_k0pe9Hb-AhSomT96r3Wg0Wf4H9lXwF1BU",
+    url: "https://www.youtube.com/watch?v=U_Vc_tf5BCk",
     icon: "/images/youtube.svg",
   },
   {
     name: "Bandcamp",
-    url: "https://sunspoiler.bandcamp.com/",
+    url: "https://sunspoiler.bandcamp.com/track/reek",
     icon: "/images/bandcamp.svg",
   },
   {
     name: "Soundcloud",
-    url: "https://soundcloud.com/sunspoiler",
+    url: "https://soundcloud.com/sunspoiler/reek",
     icon: "images/soundcloud.svg"
   }
 ];
@@ -285,22 +285,9 @@ function Homepage() {
             </SongCard>
 
           </BlockWrapper>
-          <BlockWrapper style={{ marginBottom: "5px" }}>
-            <BlockWrapper style={{ marginBottom: "20px" }}>
-              <CTA>BUY</CTA>
-              <CenterContainer>
-                <a style={{ color: "white", textDecoration: "none", marginBottom: "5px" }} href="https://square.link/u/DNxAPasl" target="_blank">Dystopia Pop, Vol. 1 On Vinyl</a>
-              </CenterContainer>
-              <CenterContainer>
-
-                <a style={{ color: "white" }} href="https://square.link/u/DNxAPasl" target="_blank">
-                  <AlbumArt style={{ borderRadius: "45px" }} src="/images/original.png" />
-                </a>
-              </CenterContainer>
-              <CTA>FOLLOW</CTA>
-              <MusicPlatformList musicPlatforms={socials} simple> </MusicPlatformList>
-            </BlockWrapper>
-
+          <BlockWrapper style={{ marginBottom: "20px" }}>
+            <CTA>FOLLOW</CTA>
+            <MusicPlatformList musicPlatforms={socials} simple> </MusicPlatformList>
           </BlockWrapper>
 
           <BlockWrapper style={{ marginBottom: "0px", paddingTop: "20px", paddingLeft: "20px", paddingRight: "20px", paddingBottom: "0px" }}>
@@ -308,9 +295,6 @@ function Homepage() {
             <div style={{ textAlign: "center", marginBottom: "0px" }} className="sender-form-field" data-sender-form-id="lwcy5wd5ammw1ad4ftd"></div>
 
           </BlockWrapper>
-
-
-
 
         </>
 
@@ -333,12 +317,23 @@ function Homepage() {
              />
            </SongCard>
 
-        <CTA>WATCH</CTA>
+        <BlockWrapper style={{ marginBottom: "0px" }}>
+          <CTA>FOLLOW</CTA>
+          <MusicPlatformList musicPlatforms={socials} simple> </MusicPlatformList>
+        </BlockWrapper>
+
+        <BlockWrapper style={{ marginBottom: "20px", padding: "20px" }}>
+          <div style={{ textAlign: "center", marginBottom: "0px" }} className="sender-form-field" data-sender-form-id="lwcy5wd5ammw1ad4ftd"></div>
+        </BlockWrapper>
+
         </>
           : ""
 
         }
 
+        <CTA>WATCH</CTA>
+
+        <YouTube videoId={"U_Vc_tf5BCk"} />
         <YouTube videoId={"OcwtIsDBoHE"} />
         <YouTube videoId={"XRJ62bzlJ-Q"} />
         <YouTube videoId={"nH3mPx0Hm6c"} />
@@ -350,10 +345,6 @@ function Homepage() {
           <>
 
 
-            <BlockWrapper style={{ marginBottom: "0px" }}>
-              <CTA>FOLLOW</CTA>
-              <MusicPlatformList musicPlatforms={socials} simple> </MusicPlatformList>
-            </BlockWrapper>
             <BlockWrapper style={{ marginBottom: "5px" }}>
               <CTA>PURCHASE</CTA>
               <CenterContainer>
@@ -367,10 +358,6 @@ function Homepage() {
               </CenterContainer>
             </BlockWrapper>
 
-            <BlockWrapper style={{ marginBottom: "20px", padding: "20px" }}>
-              <div style={{ textAlign: "center", marginBottom: "0px" }} className="sender-form-field" data-sender-form-id="lwcy5wd5ammw1ad4ftd"></div>
-
-            </BlockWrapper>
             <BlockWrapper>
               <CenterContainer>
                 <a href="https://open.spotify.com/album/7Deo3uv2sqxH2jAgdUjdN0" target="_blank" >
@@ -383,12 +370,28 @@ function Homepage() {
 
           </>
 
-          : <BlockWrapper> <CenterContainer>
-            <a href="https://open.spotify.com/album/7Deo3uv2sqxH2jAgdUjdN0" target="_blank" >
-              <AlbumArt src="/images/dystopiaPop.png" />
-            </a>
-          </CenterContainer>
-          </BlockWrapper>}
+          : <>
+            <BlockWrapper style={{ marginBottom: "5px" }}>
+              <BlockWrapper style={{ marginBottom: "20px" }}>
+                <CTA>BUY</CTA>
+                <CenterContainer>
+                  <a style={{ color: "white", textDecoration: "none", marginBottom: "5px" }} href="https://square.link/u/DNxAPasl" target="_blank">Dystopia Pop, Vol. 1 On Vinyl</a>
+                </CenterContainer>
+                <CenterContainer>
+
+                  <a style={{ color: "white" }} href="https://square.link/u/DNxAPasl" target="_blank">
+                    <AlbumArt style={{ borderRadius: "45px" }} src="/images/original.png" />
+                  </a>
+                </CenterContainer>
+              </BlockWrapper>
+            </BlockWrapper>
+            <BlockWrapper> <CenterContainer>
+              <a href="https://open.spotify.com/album/7Deo3uv2sqxH2jAgdUjdN0" target="_blank" >
+                <AlbumArt src="/images/dystopiaPop.png" />
+              </a>
+            </CenterContainer>
+            </BlockWrapper>
+          </>}
         {/* <div style={{ width: "100%", display: "flex" }}>
           <video style={{ maxWidth: "400px", margin: "0 auto" }} autoPlay loop muted controls>
             <source src="/images/dystopiaPopTeaser.mp4" type="video/mp4"></source>

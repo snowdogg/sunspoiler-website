@@ -187,12 +187,12 @@ const socials = [
 const musicPlatforms = [
   {
     name: "Spotify",
-    url: "https://open.spotify.com/album/6vV10S5Lfq8KBmmilr8M3u",
+    url: "https://open.spotify.com/artist/6pW8KV09KcQOrT2CigJCCU",
     icon: "/images/spotify.svg",
   },
   {
     name: "Apple Music",
-    url: "https://music.apple.com/us/album/reek-single/6793431782",
+    url: "https://music.apple.com/us/artist/sun-spoiler/1691028997",
     icon: "/images/apple.svg",
   },
   {
@@ -202,12 +202,12 @@ const musicPlatforms = [
   },
   {
     name: "Bandcamp",
-    url: "https://sunspoiler.bandcamp.com/track/reek",
+    url: "https://sunspoiler.bandcamp.com/",
     icon: "/images/bandcamp.svg",
   },
   {
     name: "Soundcloud",
-    url: "https://soundcloud.com/sunspoiler/reek",
+    url: "https://soundcloud.com/sunspoiler",
     icon: "images/soundcloud.svg"
   }
 ];
@@ -360,7 +360,7 @@ function Homepage() {
 
             <BlockWrapper>
               <CenterContainer>
-                <a href="https://open.spotify.com/album/7Deo3uv2sqxH2jAgdUjdN0" target="_blank" >
+                <a href="https://open.spotify.com/artist/6pW8KV09KcQOrT2CigJCCU" target="_blank" >
 
                   <AlbumArt src="/images/dystopiaPop.png" />
                 </a>
@@ -386,7 +386,7 @@ function Homepage() {
               </BlockWrapper>
             </BlockWrapper>
             <BlockWrapper> <CenterContainer>
-              <a href="https://open.spotify.com/album/7Deo3uv2sqxH2jAgdUjdN0" target="_blank" >
+              <a href="https://open.spotify.com/artist/6pW8KV09KcQOrT2CigJCCU" target="_blank" >
                 <AlbumArt src="/images/dystopiaPop.png" />
               </a>
             </CenterContainer>

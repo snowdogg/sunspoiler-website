@@ -4,6 +4,7 @@ import Homepage from './pages/Homepage';
 import BlogPost from './pages/BlogPost';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Flyer from  './pages/Flyer';
+import Hallucinations from './pages/Hallucinations';
 const RoutesConfig = () => {
   return (
     <Routes>
@@ -11,6 +12,7 @@ const RoutesConfig = () => {
       <Route path="/post/:id" element={<BlogPost />} />
       <Route path="/privacypolicy" element={<PrivacyPolicy />} />
       <Route path="/shows/:id" element={<Flyer/>} />
+      <Route path="/hallucinations" element={<Hallucinations />} />
       {/* Add as many routes as you need */}
     </Routes>
   );

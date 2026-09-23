@@ -4,13 +4,14 @@ import Helmet from 'react-helmet';
 import ReactGA from 'react-ga4';
 import GlobalStyles from '../styles/GlobalStyles';
 import { openSpotifyWithFallback } from '../utils/openSpotify';
+import Youtube from '../components/Youtube';
 
 const SPOTIFY_URI = 'spotify:track:3UgAifOHzCayjS8CdYVwhF';
 const SPOTIFY_WEB_URL = 'https://open.spotify.com/track/3UgAifOHzCayjS8CdYVwhF';
 
 const secondaryPlatforms = [
   { name: 'Apple Music', url: 'https://music.apple.com/us/artist/sun-spoiler/1691028997', icon: '/images/apple.svg' },
-  { name: 'YouTube Music', url: 'https://www.youtube.com/watch?v=U_Vc_tf5BCk', icon: '/images/youtube.svg' },
+  { name: 'YouTube Music', url: 'https://www.youtube.com/watch?v=j7McFHBUKKE', icon: '/images/youtube.svg' },
   { name: 'Bandcamp', url: 'https://sunspoiler.bandcamp.com/', icon: '/images/bandcamp.svg' },
   { name: 'SoundCloud', url: 'https://soundcloud.com/sunspoiler', icon: '/images/soundcloud.svg' },
 ];
@@ -266,6 +267,8 @@ const Hallucinations = () => {
             </SecondaryLink>
           ))}
         </SecondaryLinks>
+
+        <Youtube videoId="j7McFHBUKKE" />
 
         <Footer>
           <FooterBrand>SUN SPOILER</FooterBrand>

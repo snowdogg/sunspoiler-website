@@ -13,7 +13,7 @@ const handleLinkClick = (label) => {
   console.log('clicked ' + label)
   let value = 0;
   if (label === "Spotify")
-    value = 100;
+    value = 1;
 
   ReactGA.event({
     category: "link",

@@ -270,7 +270,7 @@ function Homepage() {
               <ProfilePic src="/images/reek.webp"></ProfilePic>
 
             </CenterContainer>
-            <div style={{ textAlign: "center", padding: "15px 15px 0", color: "#fff" }}>next show nov 19 at the offbeat bar</div>
+            <div style={{ textAlign: "center", padding: "15px 15px 0", color: "#fff" }}>next show Monday Nov 23 at Harvard and Stone</div>
             <CTA>LISTEN</CTA>
 
             <MusicPlatformList musicPlatforms={musicPlatforms} featuredIndex={0} simple></MusicPlatformList>
@@ -302,7 +302,7 @@ function Homepage() {
         : ""}
 
       <BlockWrapper>
-        {windowWidth > 768 && <div style={{ textAlign: "center", padding: "15px 15px 0", color: "#fff" }}>next show nov 19 at the offbeat bar</div>}
+        {windowWidth > 768 && <div style={{ textAlign: "center", padding: "15px 15px 0", color: "#fff" }}>next show Monday Nov 23 at Harvard and Stone</div>}
         {windowWidth > 768 ?
         <>
       <CTA>LISTEN</CTA>
